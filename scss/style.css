@@ -19,7 +19,7 @@ body {
   height: 415px;
   background: url(../img/slider2.jpg) no-repeat;
   background-position: center right;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   outline: 1px solid black;
 }
 
@@ -45,7 +45,7 @@ body {
   font-family: Myriad Pro;
   font-size: 14px;
   line-height: 17px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -96,7 +96,7 @@ body {
   width: 320px;
   padding-top: 13px;
   height: 616px;
-  background: #FFFFFF;
+  background: #ffffff;
   position: absolute;
   transform: scale(0, 0);
   transform-origin: left top;
@@ -124,10 +124,11 @@ body {
   display: block;
   width: 40px;
   height: 3px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
-.burgers-menu::before, .burgers-menu::after {
+.burgers-menu::before,
+.burgers-menu::after {
   content: "";
   display: block;
   width: 40px;
@@ -136,12 +137,12 @@ body {
 
 .burgers-menu::before {
   margin-bottom: 9px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .burgers-menu::after {
   margin-top: 9px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .menu {
@@ -183,6 +184,7 @@ body {
 .header-callback-field {
   margin-bottom: 10px;
   height: 40px;
+  width: 280px;
   border: 1px solid #363636;
   box-sizing: border-box;
   border-radius: 30px;
@@ -191,27 +193,27 @@ body {
 .header-callback-btn-span {
   font-size: 16px;
   line-height: 19px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
 .header-callback-btn {
   height: 40px;
   border-radius: 30px;
-  background-color: #008DCD;
+  background-color: #008dcd;
   transition: 0.5s;
 }
 .header-callback-btn:hover {
   box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
 }
 .header-callback-btn:active {
-  background-color: #94D1EC;
+  background-color: #94d1ec;
 }
 
 .header-callback-input-span {
   font-size: 10px;
   line-height: 12px;
-  color: #9E9E9E;
+  color: #9e9e9e;
 }
 
 .socials {
@@ -229,7 +231,7 @@ button {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background-color: #008DCD;
+  background-color: #008dcd;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -240,7 +242,7 @@ button {
   box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
 }
 .icon:active {
-  background-color: #94D1EC;
+  background-color: #94d1ec;
 }
 
 .fab {
@@ -273,7 +275,7 @@ button {
 .send-href {
   width: 280px;
   height: 48px;
-  background: #008DCD;
+  background: #008dcd;
   border-radius: 30px;
   transition: 0.5s;
 }
@@ -281,7 +283,7 @@ button {
   box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
 }
 .send-href:active {
-  background: #94D1EC;
+  background: #94d1ec;
 }
 
 .href-send {
@@ -296,14 +298,14 @@ button {
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /*section send2*/
 .send2 {
   margin-top: 27px;
   margin-bottom: 27px;
-  background: #F7F7F7;
+  background: #f7f7f7;
 }
 
 .img-send2 {
@@ -346,7 +348,7 @@ button {
 
 /*section send3*/
 .send3-wrapper {
-  background: #F7F7F7;
+  background: #f7f7f7;
 }
 
 .send3-header {
@@ -359,49 +361,49 @@ button {
 .callback {
   margin-top: 32px;
   margin-bottom: 7px;
-  background: #008DCD;
+  background: #008dcd;
 }
 
 .callback-header {
   font-size: 28px;
   line-height: 34px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .callback-text {
   font-size: 14px;
   line-height: 13px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .callback-field::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 19px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .callback-field {
   margin-bottom: 9px;
   width: 280px;
   height: 48px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 30px;
-  background: #008DCD;
+  background: #008dcd;
 }
 
 .callback-btn {
   width: 280px;
   height: 48px;
-  background: #FFCC00;
+  background: #ffcc00;
   border-radius: 30px;
 }
 .callback-btn:hover {
   box-shadow: 0px 4px 20px rgba(255, 204, 0, 0.55);
 }
 .callback-btn:active {
-  background: #FCE39C;
+  background: #fce39c;
 }
 
 .callback-btn-span {
@@ -414,7 +416,7 @@ button {
 .callback-input-span {
   font-size: 10px;
   line-height: 12px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .callback-wrapper {
@@ -439,7 +441,7 @@ button {
   width: 12px;
   height: 12px;
   box-sizing: border-box;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   position: relative;
   top: 113px;
   left: 290px;
@@ -449,16 +451,16 @@ button {
   display: block;
   width: 8px;
   height: 1px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   margin-bottom: 14px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   transform: rotate(45deg) scale(1.4);
   transform-origin: left top;
 }
 
 .pagination-left::after {
   content: "";
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   display: block;
   width: 8px;
   height: 1px;
@@ -470,7 +472,7 @@ button {
   width: 12px;
   height: 12px;
   box-sizing: border-box;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   position: relative;
   top: 123px;
   left: 5px;
@@ -480,7 +482,7 @@ button {
   display: block;
   width: 8px;
   height: 1px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   margin-bottom: -2px;
   transform: rotate(-45deg) scale(1.5);
   transform-origin: left top;
@@ -488,7 +490,7 @@ button {
 
 .pagination-right::after {
   content: "";
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   display: block;
   width: 8px;
   height: 1px;
@@ -557,7 +559,7 @@ button {
 
 /*section advantage*/
 .advantage {
-  background: #F7F7F7;
+  background: #f7f7f7;
 }
 
 .advantage-header {
@@ -582,7 +584,7 @@ button {
 .advantage-icon {
   width: 86px;
   height: 86px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 50%;
 }
 
@@ -661,7 +663,7 @@ button {
 .guarantee-icon {
   width: 62px;
   height: 62px;
-  background: #F7F7F7;
+  background: #f7f7f7;
   border-radius: 50%;
 }
 
@@ -690,7 +692,7 @@ button {
   width: 12px;
   height: 12px;
   box-sizing: border-box;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   position: relative;
   top: 18px;
   left: 260px;
@@ -700,16 +702,16 @@ button {
   display: block;
   width: 8px;
   height: 1px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   margin-bottom: 14px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   transform: rotate(45deg) scale(1.4);
   transform-origin: left top;
 }
 
 .guarantee-pagination-left::after {
   content: "";
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   display: block;
   width: 8px;
   height: 1px;
@@ -721,7 +723,7 @@ button {
   width: 12px;
   height: 12px;
   box-sizing: border-box;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   position: relative;
   top: 28px;
   left: 5px;
@@ -731,7 +733,7 @@ button {
   display: block;
   width: 8px;
   height: 1px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   margin-bottom: -2px;
   transform: rotate(-45deg) scale(1.5);
   transform-origin: left top;
@@ -739,7 +741,7 @@ button {
 
 .guarantee-pagination-right::after {
   content: "";
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   display: block;
   width: 8px;
   height: 1px;
@@ -750,7 +752,7 @@ button {
 .guarantee-callback {
   width: 230px;
   height: 48px;
-  background: #008DCD;
+  background: #008dcd;
   border-radius: 30px;
   display: flex;
   justify-content: center;
@@ -761,13 +763,13 @@ button {
   box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
 }
 .guarantee-callback:active {
-  background-color: #94D1EC;
+  background-color: #94d1ec;
 }
 
 .guarantee-href {
   font-size: 16px;
   line-height: 19px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -775,7 +777,7 @@ button {
 /*section questions*/
 .questions {
   height: 660px;
-  background: #D2ECF7;
+  background: #d2ecf7;
 }
 
 .questions-header {
@@ -788,7 +790,7 @@ button {
 .question-details {
   margin-top: 10px;
   height: 80px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 32px;
   display: flex;
   justify-content: space-between;
@@ -808,7 +810,7 @@ button {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.025em;
-  color: #008DCD;
+  color: #008dcd;
 }
 
 .box-after {
@@ -842,7 +844,7 @@ button {
   width: 12px;
   height: 12px;
   box-sizing: border-box;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   position: relative;
   top: 53px;
   left: 260px;
@@ -852,16 +854,16 @@ button {
   display: block;
   width: 8px;
   height: 1px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   margin-bottom: 14px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   transform: rotate(45deg) scale(1.4);
   transform-origin: left top;
 }
 
 .partners-pagination-left::after {
   content: "";
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   display: block;
   width: 8px;
   height: 1px;
@@ -873,7 +875,7 @@ button {
   width: 12px;
   height: 12px;
   box-sizing: border-box;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   position: relative;
   top: 62px;
   left: 5px;
@@ -883,7 +885,7 @@ button {
   display: block;
   width: 8px;
   height: 1px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   margin-bottom: -2px;
   transform: rotate(-45deg) scale(1.5);
   transform-origin: left top;
@@ -891,7 +893,7 @@ button {
 
 .partners-pagination-right::after {
   content: "";
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   display: block;
   width: 8px;
   height: 1px;
@@ -901,7 +903,7 @@ button {
 
 /*section send4*/
 .send4 {
-  background: #E9E9E9;
+  background: #e9e9e9;
 }
 
 .header-send4-text {
@@ -923,23 +925,24 @@ button {
 .send4-callback-field {
   margin-bottom: 10px;
   height: 40px;
+  width: 280px;
   border: 1px solid #363636;
   box-sizing: border-box;
   border-radius: 30px;
-  background: #E9E9E9;
+  background: #e9e9e9;
 }
 
 .footer-callback-btn {
   height: 40px;
   border-radius: 30px;
-  background-color: #008DCD;
+  background-color: #008dcd;
   transition: 0.5s;
 }
 .footer-callback-btn:hover {
   box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
 }
 .footer-callback-btn:active {
-  background-color: #94D1EC;
+  background-color: #94d1ec;
 }
 
 .send4-footer {
@@ -963,7 +966,8 @@ button {
   background-color: #363636;
 }
 
-.send4-burgers-menu::before, .send4-burgers-menu::after {
+.send4-burgers-menu::before,
+.send4-burgers-menu::after {
   content: "";
   display: block;
   width: 40px;
@@ -1034,7 +1038,8 @@ button {
   background-color: #000000;
 }
 
-.footer-burgers-menu::before, .footer-burgers-menu::after {
+.footer-burgers-menu::before,
+.footer-burgers-menu::after {
   content: "";
   display: block;
   width: 40px;
@@ -1067,7 +1072,7 @@ button {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background-color: #008DCD;
+  background-color: #008dcd;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -1078,7 +1083,7 @@ button {
   box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
 }
 .footer-icon:active {
-  background-color: #94D1EC;
+  background-color: #94d1ec;
 }
 
 @media (min-width: 620px) {
@@ -1107,12 +1112,12 @@ button {
   .send-header {
     font-size: 44px;
     line-height: 53px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .send-text {
     font-size: 28px;
     line-height: 34px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .main {
     transform: translateY(-420px);
@@ -1202,7 +1207,8 @@ button {
     font-size: 14px;
     line-height: 17px;
   }
-  .about-header, .advantage-header {
+  .about-header,
+  .advantage-header {
     font-size: 36px;
     line-height: 43px;
     padding-bottom: 20px;
@@ -1260,7 +1266,7 @@ button {
   .guarantee-icon {
     width: 100px;
     height: 100px;
-    background: #F7F7F7;
+    background: #f7f7f7;
   }
   .img-guarantee {
     margin-top: 28px;
