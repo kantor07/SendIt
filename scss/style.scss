@@ -22,7 +22,7 @@
   background: transparent;
 }
 
-@mixin callback-input($width: 280px, $height: 40px) {
+@mixin btn($width: 280px, $height: 40px) {
   height: $height;
   width: $width;
   border: 1px solid #363636;
@@ -200,7 +200,7 @@ body {
 .header-callback-field {
   margin-bottom: 10px;
 
-  @include callback-input();
+  @include btn();
 }
 
 .header-callback-btn-span {
@@ -743,10 +743,10 @@ button {
 }
 
 .guarantee-callback {
-  width: 230px;
-  height: 48px;
+  @include btn();
+  border: none;
+
   background: #008dcd;
-  border-radius: 30px;
 
   display: flex;
   justify-content: center;
@@ -911,7 +911,7 @@ button {
 
 .send4-callback-field {
   margin-bottom: 10px;
-  @include callback-input();
+  @include btn();
   background: #e9e9e9;
 }
 .footer-callback-btn {

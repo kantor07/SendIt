@@ -750,10 +750,13 @@ button {
 }
 
 .guarantee-callback {
-  width: 230px;
-  height: 48px;
-  background: #008dcd;
+  height: 40px;
+  width: 280px;
+  border: 1px solid #363636;
+  box-sizing: border-box;
   border-radius: 30px;
+  border: none;
+  background: #008dcd;
   display: flex;
   justify-content: center;
   align-items: center;
