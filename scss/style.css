@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /* подключение стилей Myriad Pro */
 @font-face {
-  font-family: "MyriadProBold";
-  src: url("../fonts/MyriadProBold/MyriadProBold.eot");
-  src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"), url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+  font-family: "MyriadProBlack";
+  src: url("../fonts/MyriadProBlack/MyriadPro-Black.eot");
+  src: url("../fonts/MyriadProBlack/MyriadPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBlack/MyriadPro-Black.woff") format("woff"), url("../fonts/MyriadProBlack/MyriadPro-Black.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
@@ -23,8 +23,11 @@
 }
 @font-face {
   font-family: "MyriadProLight";
-  src: url("../fonts/MyriadProLight.otf");
+  src: url("../fonts/MyriadProLight/MyriadPro-Light.otf") format("otf");
+  src: url("../fonts/MyriadProLight/MyriadPro-Light.eot");
+  src: url("../fonts/MyriadProLight/MyriadPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProLight/MyriadPro-Light.woff") format("woff"), url("../fonts/MyriadProLight/MyriadPro-Light.woff2") format("woff2"), url("../fonts/MyriadProLight/MyriadPro-Light.ttf") format("truetype");
   font-style: normal;
+  font-weight: 300;
 }
 body {
   margin: 0;
@@ -283,7 +286,7 @@ button {
 
 /*section send*/
 .send-header {
-  font-family: "MyriadPro", sans-serif;
+  font-family: "MyriadProBlack", sans-serif;
   font-size: 32px;
   line-height: 38px;
   display: flex;
