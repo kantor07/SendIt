@@ -295,7 +295,8 @@ button {
 }
 
 .send-text {
-  font-size: 24px;
+  font-family: "MyriadProBlack", sans-serif;
+  font-size: 2px;
   line-height: 29px;
   color: #000000;
 }
@@ -1151,6 +1152,7 @@ button {
     color: #ffffff;
   }
   .send-text {
+    font-family: "MyriadProBlack", sans-serif;
     font-size: 28px;
     line-height: 34px;
     color: #ffffff;
