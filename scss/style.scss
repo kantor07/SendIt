@@ -59,6 +59,7 @@
 }
 
 @mixin about-header-text {
+  font-family: "MyriadProBlack", sans-serif;
   font-size: 28px;
   color: #000000;
 }
@@ -330,12 +331,14 @@ button {
   display: flex;
   align-items: center;
 
+  text-transform: uppercase;
+
   color: #000000;
 }
 
 .send-text {
   font-family: "MyriadProBlack", sans-serif;
-  font-size: 2px;
+  font-size: 24px;
   line-height: 29px;
   color: #000000;
 }
@@ -367,6 +370,7 @@ button {
   justify-content: center;
 }
 .send-href-span {
+  font-family: "MyriadProBlack", sans-serif;
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
@@ -385,12 +389,14 @@ button {
 }
 
 .send2-header {
+  font-family: "MyriadProSemibold", sans-serif;
   font-size: 17px;
   line-height: 22px;
   color: #000000;
 }
 
 .send2-text {
+  font-family: "MyriadProRegular", sans-serif;
   font-size: 11px;
   line-height: 14px;
   color: #000000;
@@ -406,12 +412,14 @@ button {
 }
 
 .guide-step1-header {
+  font-family: "MyriadProRegular", sans-serif;
   font-size: 26px;
   line-height: 0px;
   color: #000000;
 }
 
 .guide-step1-text {
+  font-family: "MyriadProRegular", sans-serif;
   font-size: 13px;
   line-height: 17px;
   color: #000000;
@@ -423,6 +431,7 @@ button {
 }
 
 .send3-header {
+  font-family: "MyriadProBlack", sans-serif;
   font-size: 24px;
   line-height: 29px;
   color: #000000;
@@ -436,6 +445,9 @@ button {
 }
 
 .callback-header {
+  padding-top: 30px;
+
+  font-family: "MyriadProBlack", sans-serif;
   font-size: 28px;
   line-height: 34px;
   text-transform: uppercase;
@@ -443,21 +455,27 @@ button {
 }
 
 .callback-text {
+  font-family: "MyriadProSemibold", sans-serif;
   font-size: 14px;
   line-height: 13px;
   color: #ffffff;
 }
 
 .callback-field::-webkit-input-placeholder {
+  font-family: "MyriadProRegular", sans-serif;
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
 }
 
 .callback-field {
+  padding-left: 10px;
   margin-bottom: 9px;
+
   width: 280px;
   height: 48px;
+
+  font-family: "MyriadProRegular", sans-serif;
   border: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 30px;
@@ -467,6 +485,7 @@ button {
 .callback-btn {
   width: 280px;
   height: 48px;
+
   background: #ffcc00;
   border-radius: 30px;
 
@@ -480,20 +499,43 @@ button {
 }
 
 .callback-btn-span {
+  font-family: "MyriadProBlack", sans-serif;
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
   color: #363636;
 }
 
+input::before,
+input::after {
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+.callback-agree-input {
+  width: 10px;
+  height: 10px;
+
+  border: 1px solid #ffffff;
+
+  background-color: #008dcd;
+}
+
 .callback-input-span {
+  font-family: "MyriadProLight", sans-serif;
   font-size: 10px;
-  line-height: 12px;
+  line-height: 0px;
   color: #ffffff;
 }
 
 .callback-wrapper {
-  padding-bottom: 7px;
+  padding-bottom: 10px;
 }
 
 /*section about*/
@@ -584,30 +626,39 @@ button {
   height: 110px;
 }
 .author-name {
+  font-family: "MyriadProRegular", sans-serif;
   font-size: 26px;
   line-height: 6px;
   color: #000000;
 }
 
 .author-company {
+  font-family: "MyriadProRegular", sans-serif;
   font-size: 18px;
   line-height: 9px;
   color: #000000;
 }
 
 .author-package {
+  font-family: "MyriadProRegular", sans-serif;
   font-size: 10px;
   line-height: 5px;
   color: #000000;
 }
 
+.author-package-span {
+  padding-left: 5px;
+}
+
 .about-package {
+  font-family: "MyriadProRegular", sans-serif;
   font-size: 10px;
   line-height: 4px;
   color: #000000;
 }
 
 .author-comment {
+  font-family: "MyriadProRegular", sans-serif;
   font-size: 12px;
   line-height: 14px;
   color: #000000;
@@ -693,6 +744,7 @@ button {
   width: 62px;
   height: 16px;
 
+  font-family: "MyriadProRegular", sans-serif;
   font-size: 10px;
   line-height: 12px;
   color: #000000;
@@ -702,8 +754,11 @@ button {
 /*section guarantee*/
 .guarantee-header {
   margin-top: 10px;
+
   width: 160px;
   height: 39px;
+
+  font-family: "MyriadProRegular", sans-serif;
   font-size: 16px;
   line-height: 19px;
   color: #000000;
@@ -734,8 +789,11 @@ button {
 .guarantee-text {
   padding-top: 10px;
   padding-bottom: 7px;
+
   width: 230px;
   height: 80px;
+
+  font-family: "MyriadProRegular", sans-serif;
   font-size: 12px;
   line-height: 14px;
   color: #000000;
@@ -817,9 +875,11 @@ button {
 }
 
 .guarantee-href {
+  font-family: "MyriadProBlack", sans-serif;
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
+
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -832,6 +892,8 @@ button {
 
 .questions-header {
   padding-top: 25px;
+
+  font-family: "MyriadProBlack", sans-serif;
   font-size: 28px;
   line-height: 34px;
   color: #000000;
@@ -850,6 +912,8 @@ button {
 
 .question-text {
   padding-left: 24px;
+
+  font-family: "MyriadProRegular", sans-serif;
   font-size: 14px;
   line-height: 17px;
   color: #000000;
@@ -947,6 +1011,7 @@ button {
 }
 
 .header-send4-text {
+  font-family: "MyriadProBlack", sans-serif;
   font-size: 18px;
   line-height: 22px;
   color: #000000;
@@ -1363,6 +1428,7 @@ button {
     font-size: 19px;
     line-height: 10px;
   }
+
   .guarantee-text {
     width: 220px;
     margin-top: -30px;
