@@ -275,6 +275,13 @@ body {
   text-transform: uppercase;
 }
 
+.text-left {
+  padding-right: 25px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
 .header-callback-btn {
   height: 40px;
   border-radius: 30px;
