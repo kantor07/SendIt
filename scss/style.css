@@ -29,6 +29,8 @@
   font-style: normal;
   font-weight: 300;
 }
+/* mixin */
+/* основные */
 body {
   margin: 0;
   font-family: "Lato", Arial, sans-serif;
@@ -44,6 +46,7 @@ body {
   /*вместо display: none;*/
 }
 
+/* header */
 .header {
   margin: 0 auto;
   height: 415px;
@@ -61,6 +64,7 @@ body {
   outline: 1px solid red;
 }
 
+/* section drop menu */
 .nav {
   padding-top: 38px;
   display: flex;
@@ -206,13 +210,16 @@ body {
 }
 
 .header-callback-field::-webkit-input-placeholder {
+  font-family: "MyriadProRegular", sans-serif;
   font-size: 14px;
   line-height: 17px;
   color: #363636;
 }
 
 .header-callback-field {
+  padding-left: 25px;
   margin-bottom: 10px;
+  font-family: "MyriadProRegular", sans-serif;
   height: 40px;
   width: 280px;
   border: 1px solid #363636;
@@ -246,6 +253,7 @@ body {
   color: #9e9e9e;
 }
 
+/* socials */
 .socials {
   display: flex;
   justify-content: space-between;
@@ -325,10 +333,11 @@ button {
   padding-bottom: 20px;
   text-decoration: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .send-href-span {
+  padding-right: 25px;
   font-family: "MyriadProBlack", sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -428,7 +437,7 @@ button {
 }
 
 .callback-field {
-  padding-left: 10px;
+  padding-left: 25px;
   margin-bottom: 9px;
   width: 280px;
   height: 48px;
@@ -501,6 +510,7 @@ input[type=checkbox] {
   color: #000000;
 }
 
+/* section guarantee pagination */
 .pagination {
   position: absolute;
 }
@@ -566,6 +576,7 @@ input[type=checkbox] {
   transform-origin: left bottom;
 }
 
+/* section reviews box guarantee */
 .reviews-box {
   margin-left: 25px;
   margin-top: -14px;
@@ -839,7 +850,7 @@ input[type=checkbox] {
   border: none;
   background: #008dcd;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   transition: 0.5s;
 }
@@ -851,6 +862,7 @@ input[type=checkbox] {
 }
 
 .guarantee-href {
+  padding-right: 25px;
   font-family: "MyriadProBlack", sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -1000,23 +1012,27 @@ input[type=checkbox] {
   color: #000000;
 }
 
+/* section footer-send4 */
 .footer-send4-callback {
   padding-top: 12px;
 }
 
 .send4-callback-field::-webkit-input-placeholder {
+  font-family: "MyriadProRegular", sans-serif;
   font-size: 14px;
   line-height: 17px;
   color: #363636;
 }
 
 .send4-callback-field {
+  padding-left: 25px;
   margin-bottom: 10px;
   height: 40px;
   width: 280px;
   border: 1px solid #363636;
   box-sizing: border-box;
   border-radius: 30px;
+  font-family: "MyriadProRegular", sans-serif;
   background: #e9e9e9;
 }
 
@@ -1452,9 +1468,11 @@ input[type=checkbox] {
     line-height: 24px;
   }
   .send4-callback-field {
+    padding-left: 25px;
     margin-bottom: 8px;
     height: 48px;
     width: 220px;
+    font-family: "MyriadProRegular", sans-serif;
   }
   .footer-callback-btn {
     width: 220px;
