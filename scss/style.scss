@@ -100,11 +100,11 @@ body {
 
 .header {
   margin: 0 auto;
-  height: 415px;
-  background: url(../img/slider2.jpg) no-repeat;
-  background-position: center right;
+  height: 290px;
+  background: url(../img/slider2.jpg) center right no-repeat;
+  background-size: 170%;
   background-color: #e5e5e5;
-  outline: 1px solid black;
+  outline: none;
 }
 
 .wrapper {
