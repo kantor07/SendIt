@@ -713,7 +713,6 @@ input[type="checkbox"] {
 }
 
 .advantage-header {
-  padding-bottom: 29px;
   @include about-header-text();
   line-height: 30px;
 }
@@ -792,6 +791,11 @@ input[type="checkbox"] {
 
 /*section guarantee*/
 
+.guarantee {
+  margin: 0px;
+  padding: 0px;
+}
+
 .guarantee-header {
   margin-top: 10px;
 
@@ -809,14 +813,16 @@ input[type="checkbox"] {
 }
 
 .guarantee-reviews-text {
-  width: 277px;
   display: flex;
   justify-content: space-around;
 }
 
 .guarantee-icon {
+  margin-left: 15px;
+
   width: 62px;
   height: 62px;
+
   background: #f7f7f7;
   border-radius: 50%;
 }
@@ -824,16 +830,15 @@ input[type="checkbox"] {
 .img-guarantee {
   margin-top: 19px;
   margin-left: 17px;
+
   width: 28px;
   height: 26px;
 }
 
 .guarantee-text {
-  padding-top: 10px;
-  padding-bottom: 7px;
+  padding-left: 30px;
 
   width: 230px;
-  height: 80px;
 
   font-family: "MyriadProRegular", sans-serif;
   font-size: 12px;
@@ -896,7 +901,9 @@ input[type="checkbox"] {
 }
 
 .guarantee-callback {
-  @include btn();
+  margin-left: 30px;
+
+  @include btn(230px, 40px);
   border: none;
 
   background: #008dcd;
@@ -1387,7 +1394,6 @@ input[type="checkbox"] {
   .advantage-header {
     font-size: 36px;
     line-height: 43px;
-    padding-bottom: 20px;
   }
 
   .advantage-icon {
@@ -1502,16 +1508,12 @@ input[type="checkbox"] {
   }
 
   .guarantee-reviews {
-    margin-top: -48px;
-  }
-
-  .guarantee-reviews-box {
-    height: 305px;
+    /*margin-top: -48px;*/
   }
 
   .guarantee-reviews-text {
-    width: 220px;
-    display: block;
+    /*width: 220px;
+    display: block;*/
   }
 
   .reviews-box-guarantee {

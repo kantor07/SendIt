@@ -658,7 +658,6 @@ input[type=checkbox] {
 }
 
 .advantage-header {
-  padding-bottom: 29px;
   font-family: "MyriadProBlack", sans-serif;
   font-size: 28px;
   color: #000000;
@@ -737,6 +736,11 @@ input[type=checkbox] {
 }
 
 /*section guarantee*/
+.guarantee {
+  margin: 0px;
+  padding: 0px;
+}
+
 .guarantee-header {
   margin-top: 10px;
   width: 160px;
@@ -752,12 +756,12 @@ input[type=checkbox] {
 }
 
 .guarantee-reviews-text {
-  width: 277px;
   display: flex;
   justify-content: space-around;
 }
 
 .guarantee-icon {
+  margin-left: 15px;
   width: 62px;
   height: 62px;
   background: #f7f7f7;
@@ -772,10 +776,8 @@ input[type=checkbox] {
 }
 
 .guarantee-text {
-  padding-top: 10px;
-  padding-bottom: 7px;
+  padding-left: 30px;
   width: 230px;
-  height: 80px;
   font-family: "MyriadProRegular", sans-serif;
   font-size: 12px;
   line-height: 14px;
@@ -848,8 +850,9 @@ input[type=checkbox] {
 }
 
 .guarantee-callback {
+  margin-left: 30px;
   height: 40px;
-  width: 280px;
+  width: 230px;
   border: 1px solid #363636;
   box-sizing: border-box;
   border-radius: 30px;
@@ -1323,7 +1326,6 @@ input[type=checkbox] {
   .advantage-header {
     font-size: 36px;
     line-height: 43px;
-    padding-bottom: 20px;
   }
   .advantage-icon {
     width: 100px;
@@ -1419,14 +1421,11 @@ input[type=checkbox] {
     height: 314px;
   }
   .guarantee-reviews {
-    margin-top: -48px;
-  }
-  .guarantee-reviews-box {
-    height: 305px;
+    /*margin-top: -48px;*/
   }
   .guarantee-reviews-text {
-    width: 220px;
-    display: block;
+    /*width: 220px;
+    display: block;*/
   }
   .reviews-box-guarantee {
     height: 290px;
