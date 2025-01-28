@@ -736,11 +736,6 @@ input[type=checkbox] {
 }
 
 /*section guarantee*/
-.guarantee {
-  margin: 0px;
-  padding: 0px;
-}
-
 .guarantee-header {
   margin-top: 10px;
   width: 160px;
