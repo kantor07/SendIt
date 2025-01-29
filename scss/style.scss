@@ -576,10 +576,6 @@ input[type="checkbox"] {
 
 /*section about*/
 
-.review {
-  height: 295px;
-}
-
 .about-header {
   @include about-header-text();
 }
@@ -610,12 +606,17 @@ input[type="checkbox"] {
   justify-content: start;
 }
 
-.about-reviews {
+.about-reviews,
+.about-guarantee {
   margin-bottom: 15px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.about-guarantee {
+  align-items: baseline;
 }
 
 .about-reviews-box {
@@ -781,6 +782,7 @@ input[type="checkbox"] {
 }
 
 .reviews-box-guarantee {
+  min-width: 230px;
   height: 235px;
 }
 
@@ -1355,15 +1357,6 @@ input[type="checkbox"] {
   }
   .advantage-wrapper {
     height: 314px;
-  }
-
-  .guarantee-reviews {
-    /*margin-top: -48px;*/
-  }
-
-  .guarantee-reviews-text {
-    /*width: 220px;
-    display: block;*/
   }
 
   .reviews-box-guarantee {
