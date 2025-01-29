@@ -46,17 +46,21 @@
 }
 
 /* mixin */
-@mixin burger($width: 40px, $heigt: 3px) {
+@mixin burger($width: 40px, $heigt: 3px, $color: #000000) {
   display: block;
   width: $width;
   height: $heigt;
+  background-color: $color;
 }
 
-@mixin pagination {
-  width: 12px;
-  height: 12px;
-  box-sizing: border-box;
-  background-color: #c4c4c4;
+@mixin arrow($width: 12px, $heigt: 12px, $color: #c4c4c4, $border: 2px) {
+  display: block;
+
+  width: $width;
+  height: $heigt;
+
+  border-top: $border solid $color;
+  border-right: $border solid $color;
 }
 
 @mixin about-header-text {
@@ -158,7 +162,7 @@ body {
 
 .drop-burgers-menu span {
   @include burger();
-  background-color: #000000;
+
   margin-bottom: 21px;
 
   transform: rotate(45deg) scale(0.88);
@@ -167,7 +171,6 @@ body {
 
 .drop-burgers-menu::after {
   content: "";
-  background-color: #000000;
   @include burger();
   transform: rotate(-45deg) scale(0.88);
   transform-origin: left bottom;
@@ -395,6 +398,7 @@ button {
   display: flex;
   justify-content: flex-end;
 }
+
 .send-href-span {
   padding-right: 25px;
 
@@ -582,71 +586,43 @@ input[type="checkbox"] {
 
 /* section guarantee pagination */
 
-.pagination {
-  position: absolute;
-}
-
 .pagination-left {
-  @include pagination();
-
-  position: relative;
-  top: 113px;
-  left: 290px;
-}
-
-.pagination-left span {
-  @include burger(8px, 1px);
-  background-color: #c4c4c4;
-  margin-bottom: 14px;
-  background-color: #c4c4c4;
-
-  transform: rotate(45deg) scale(1.4);
-  transform-origin: left top;
-}
-.pagination-left::after {
-  content: "";
-  background-color: #c4c4c4;
-  @include burger(8px, 1px);
-  transform: rotate(-45deg) scale(1.4);
-  transform-origin: left bottom;
+  @include arrow();
+  transform: rotate(-135deg) scale(1.4);
 }
 
 .pagination-right {
-  @include pagination();
-
-  position: relative;
-  top: 123px;
-  left: 5px;
-}
-
-.pagination-right span {
-  @include burger(8px, 1px);
-  background-color: #c4c4c4;
-  margin-bottom: -2px;
-
-  transform: rotate(-45deg) scale(1.5);
-  transform-origin: left top;
-}
-
-.pagination-right::after {
-  content: "";
-  background-color: #c4c4c4;
-  @include burger(8px, 1px);
-  transform: rotate(45deg) scale(1.5);
-  transform-origin: left bottom;
+  @include arrow();
+  transform: rotate(45deg) scale(1.4);
 }
 
 /* section reviews box guarantee */
 
 .reviews-box {
-  margin-left: 25px;
-  margin-top: -14px;
+  margin-left: 0px;
+  margin-top: 0px;
 }
 
 .reviews-text {
-  width: 277px;
+  min-width: 230px;
+  max-width: 275px;
   display: flex;
   justify-content: start;
+}
+
+.about-reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.about-reviews-box {
+  margin: 0px 10px;
+  width: 230px;
+
+  display: flex;
+  flex-grow: 1;
 }
 
 .about-reviews-author {
@@ -841,60 +817,6 @@ input[type="checkbox"] {
   color: #000000;
 }
 
-.guarantee-pagination {
-  position: absolute;
-}
-
-.guarantee-pagination-left {
-  @include pagination();
-
-  position: relative;
-  top: 18px;
-  left: 260px;
-}
-
-.guarantee-pagination-left span {
-  @include burger(8px, 1px);
-  background-color: #c4c4c4;
-  margin-bottom: 14px;
-  background-color: #c4c4c4;
-
-  transform: rotate(45deg) scale(1.4);
-  transform-origin: left top;
-}
-.guarantee-pagination-left::after {
-  content: "";
-  background-color: #c4c4c4;
-  @include burger(8px, 1px);
-  transform: rotate(-45deg) scale(1.4);
-  transform-origin: left bottom;
-}
-
-.guarantee-pagination-right {
-  @include pagination();
-
-  position: relative;
-  top: 28px;
-  left: 5px;
-}
-
-.guarantee-pagination-right span {
-  @include burger(8px, 1px);
-  background-color: #c4c4c4;
-  margin-bottom: -2px;
-
-  transform: rotate(-45deg) scale(1.5);
-  transform-origin: left top;
-}
-
-.guarantee-pagination-right::after {
-  content: "";
-  background-color: #c4c4c4;
-  @include burger(8px, 1px);
-  transform: rotate(45deg) scale(1.5);
-  transform-origin: left bottom;
-}
-
 .guarantee-callback {
   margin-left: 30px;
 
@@ -1003,56 +925,6 @@ input[type="checkbox"] {
   flex: 1 1;
 }
 
-.partners-pagination-left {
-  @include pagination();
-
-  position: relative;
-  top: 53px;
-  left: 260px;
-}
-
-.partners-pagination-left span {
-  @include burger(8px, 1px);
-  background-color: #c4c4c4;
-  margin-bottom: 14px;
-  background-color: #c4c4c4;
-
-  transform: rotate(45deg) scale(1.4);
-  transform-origin: left top;
-}
-.partners-pagination-left::after {
-  content: "";
-  background-color: #c4c4c4;
-  @include burger(8px, 1px);
-  transform: rotate(-45deg) scale(1.4);
-  transform-origin: left bottom;
-}
-
-.partners-pagination-right {
-  @include pagination();
-
-  position: relative;
-  top: 62px;
-  left: 5px;
-}
-
-.partners-pagination-right span {
-  @include burger(8px, 1px);
-  background-color: #c4c4c4;
-  margin-bottom: -2px;
-
-  transform: rotate(-45deg) scale(1.5);
-  transform-origin: left top;
-}
-
-.partners-pagination-right::after {
-  content: "";
-  background-color: #c4c4c4;
-  @include burger(8px, 1px);
-  transform: rotate(45deg) scale(1.5);
-  transform-origin: left bottom;
-}
-
 /*section send4*/
 
 .send4 {
@@ -1116,14 +988,14 @@ input[type="checkbox"] {
 }
 
 .send4-burgers-menu span {
-  @include burger();
+  @include arrow();
   background-color: #363636;
 }
 
 .send4-burgers-menu::before,
 .send4-burgers-menu::after {
   content: "";
-  @include burger();
+  @include arrow();
 }
 
 .send4-burgers-menu::before {
@@ -1183,14 +1055,14 @@ input[type="checkbox"] {
 }
 
 .footer-burgers-menu span {
-  @include burger();
+  @include arrow();
   background-color: #000000;
 }
 
 .footer-burgers-menu::before,
 .footer-burgers-menu::after {
   content: "";
-  @include burger();
+  @include arrow();
 }
 
 .footer-burgers-menu::before {
@@ -1366,20 +1238,6 @@ input[type="checkbox"] {
     height: 396px;
   }
 
-  .about-reviews-box {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .pagination-left {
-    left: 670px;
-    top: 75px;
-  }
-
-  .pagination-right {
-    top: 75px;
-  }
-
   .author-comment {
     font-size: 14px;
     line-height: 17px;
@@ -1445,10 +1303,6 @@ input[type="checkbox"] {
 
     font-size: 12px;
     line-height: 14px;
-  }
-
-  .guarantee-pagination {
-    transform: scale(0);
   }
 
   .guarantee-icon {
@@ -1547,15 +1401,6 @@ input[type="checkbox"] {
     padding-left: 40px;
     padding-right: 25px;
     padding-top: 17px;
-  }
-
-  .partners-pagination-right {
-    top: 50px;
-  }
-
-  .partners-pagination-left {
-    top: 40px;
-    left: 715px;
   }
 
   .footer {
