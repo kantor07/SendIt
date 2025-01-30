@@ -233,6 +233,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
+  font-family: "MyriadProBlack", sans-serif;
   text-transform: uppercase;
 }
 
@@ -894,7 +895,7 @@ details[open] summary::before {
 }
 
 .header-send4-text {
-  font-family: "MyriadProBlack", sans-serif;
+  font-family: "MyriadProRegular", sans-serif;
   font-size: 18px;
   line-height: 22px;
   color: #000000;
