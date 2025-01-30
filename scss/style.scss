@@ -858,7 +858,7 @@ input[type="checkbox"] {
 /*section questions*/
 
 .questions {
-  height: 660px;
+  padding-bottom: 25px;
   background: #d2ecf7;
 }
 
@@ -882,8 +882,11 @@ input[type="checkbox"] {
   align-items: center;
 }
 
-.question-text {
-  padding-left: 24px;
+.question-text,
+.answer-text {
+  width: 205px;
+
+  padding: 10px 25px;
 
   font-family: "MyriadProRegular", sans-serif;
   font-size: 14px;
@@ -891,13 +894,41 @@ input[type="checkbox"] {
   color: #000000;
 }
 
-.fa-chevron-down {
-  padding-right: 24px;
-  font-family: FontAwesome;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.025em;
-  color: #008dcd;
+.question-text {
+  width: 205px;
+}
+
+.answer-text {
+  width: 225px;
+  height: 80px;
+  border: 1px solid #ffffff;
+  border-radius: 32px;
+}
+
+summary {
+  position: relative;
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: "";
+  position: absolute;
+  right: 25px;
+
+  @include arrow(8px, 8px, #008dcd, 2px);
+  transform: rotate(135deg);
+}
+
+details[open] summary::before {
+  content: "";
+  right: 25px;
+
+  @include arrow(8px, 8px, #008dcd, 2px);
+  transform: rotate(-45deg);
 }
 
 .box-after {
