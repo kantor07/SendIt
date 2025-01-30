@@ -607,7 +607,8 @@ input[type="checkbox"] {
 }
 
 .about-reviews,
-.about-guarantee {
+.about-guarantee,
+.partners-wrapper {
   margin-bottom: 15px;
 
   display: flex;
@@ -615,7 +616,8 @@ input[type="checkbox"] {
   align-items: center;
 }
 
-.about-guarantee {
+.about-guarantee,
+.partners-wrapper {
   align-items: baseline;
 }
 
@@ -938,9 +940,10 @@ details[open] summary::before {
 /*section partners*/
 
 .partners-box {
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 17px;
+  padding: 15px 0px;
+
+  width: 220px;
+  height: 90px;
 }
 
 .href-partners-icon-after {
