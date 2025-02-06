@@ -97,7 +97,7 @@ body {
 
 .logo-img {
   width: 100px;
-  height: 29px;
+  height: 30px;
 }
 
 .drop-burgers-menu {
@@ -111,6 +111,7 @@ body {
   width: 40px;
   height: 3px;
   background-color: #000000;
+  transform: scale(1.3);
   margin-bottom: 21px;
   transform: rotate(45deg) scale(0.88);
   transform-origin: left top;
@@ -122,6 +123,7 @@ body {
   width: 40px;
   height: 3px;
   background-color: #000000;
+  transform: scale(1.3);
   transform: rotate(-45deg) scale(0.88);
   transform-origin: left bottom;
 }
@@ -159,6 +161,7 @@ body {
   width: 40px;
   height: 3px;
   background-color: #000000;
+  transform: scale(1.3);
   background-color: #ffffff;
 }
 
@@ -169,6 +172,7 @@ body {
   width: 40px;
   height: 3px;
   background-color: #000000;
+  transform: scale(1.3);
 }
 
 .burgers-menu::before {
@@ -959,10 +963,10 @@ details[open] summary::before {
 
 .send4-burgers-menu span {
   display: block;
-  width: 12px;
-  height: 12px;
-  border-top: 2px solid #c4c4c4;
-  border-right: 2px solid #c4c4c4;
+  width: 40px;
+  height: 3px;
+  background-color: #000000;
+  transform: scale(1.3);
   background-color: #363636;
 }
 
@@ -970,10 +974,10 @@ details[open] summary::before {
 .send4-burgers-menu::after {
   content: "";
   display: block;
-  width: 12px;
-  height: 12px;
-  border-top: 2px solid #c4c4c4;
-  border-right: 2px solid #c4c4c4;
+  width: 40px;
+  height: 3px;
+  background-color: #000000;
+  transform: scale(1.3);
 }
 
 .send4-burgers-menu::before {
@@ -1002,9 +1006,10 @@ details[open] summary::before {
 }
 
 .footer-nav {
-  padding-top: 19px;
+  padding-top: 5px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav-after {
@@ -1027,6 +1032,11 @@ details[open] summary::before {
   list-style-type: none;
 }
 
+.logo-img-footer {
+  width: 140px;
+  height: 60px;
+}
+
 .footer-burgers-menu {
   outline: none;
   border: 0;
@@ -1035,10 +1045,10 @@ details[open] summary::before {
 
 .footer-burgers-menu span {
   display: block;
-  width: 12px;
-  height: 12px;
-  border-top: 2px solid #c4c4c4;
-  border-right: 2px solid #c4c4c4;
+  width: 40px;
+  height: 3px;
+  background-color: #000000;
+  transform: scale(1.3);
   background-color: #000000;
 }
 
@@ -1046,10 +1056,10 @@ details[open] summary::before {
 .footer-burgers-menu::after {
   content: "";
   display: block;
-  width: 12px;
-  height: 12px;
-  border-top: 2px solid #c4c4c4;
-  border-right: 2px solid #c4c4c4;
+  width: 40px;
+  height: 3px;
+  background-color: #000000;
+  transform: scale(1.3);
 }
 
 .footer-burgers-menu::before {
