@@ -523,7 +523,8 @@ input[type=checkbox] {
   height: 12px;
   border-top: 2px solid #c4c4c4;
   border-right: 2px solid #c4c4c4;
-  transform: rotate(-135deg) scale(1.4);
+  transform: rotate(-135deg) scale(1.5);
+  translate: 0px -10px;
 }
 
 .pagination-right {
@@ -532,7 +533,12 @@ input[type=checkbox] {
   height: 12px;
   border-top: 2px solid #c4c4c4;
   border-right: 2px solid #c4c4c4;
-  transform: rotate(45deg) scale(1.4);
+  transform: rotate(45deg) scale(1.5);
+  translate: 0px -10px;
+}
+
+.pagination-partners {
+  translate: 0px 10px;
 }
 
 /* section reviews box guarantee */
@@ -557,8 +563,7 @@ input[type=checkbox] {
   align-items: center;
 }
 
-.about-guarantee,
-.partners-wrapper {
+.about-guarantee {
   align-items: baseline;
 }
 

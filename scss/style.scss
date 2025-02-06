@@ -586,12 +586,18 @@ input[type="checkbox"] {
 
 .pagination-left {
   @include arrow();
-  transform: rotate(-135deg) scale(1.4);
+  transform: rotate(-135deg) scale(1.5);
+  translate: 0px -10px;
 }
 
 .pagination-right {
   @include arrow();
-  transform: rotate(45deg) scale(1.4);
+  transform: rotate(45deg) scale(1.5);
+  translate: 0px -10px;
+}
+
+.pagination-partners {
+  translate: 0px 10px;
 }
 
 /* section reviews box guarantee */
@@ -618,8 +624,7 @@ input[type="checkbox"] {
   align-items: center;
 }
 
-.about-guarantee,
-.partners-wrapper {
+.about-guarantee {
   align-items: baseline;
 }
 
