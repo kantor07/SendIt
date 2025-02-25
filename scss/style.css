@@ -59,14 +59,13 @@ body {
 .wrapper {
   min-width: 280px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0px 20px;
   outline: 1px solid red;
 }
 
 /* section drop menu */
 .nav {
-  padding-top: 38px;
+  padding-top: 25px;
   display: flex;
   justify-content: space-between;
 }
@@ -140,13 +139,14 @@ body {
 }
 
 .main-nav:hover .header-menu {
-  transform: scale(1, 1) translateX(-248px) translateY(-60px);
+  transform: scale(1, 1) translateX(-248px) translateY(-70px);
 }
 
 .hover-main {
+  margin-top: 15px;
   width: 320px;
   transform: translateX(-23px);
-  height: 4145px;
+  height: 4315px;
   background: rgba(0, 0, 0, 0.2);
 }
 
@@ -262,8 +262,8 @@ body {
 }
 
 .header-callback-input-span {
+  padding-left: 5px;
   font-size: 10px;
-  line-height: 12px;
   color: #9e9e9e;
 }
 
@@ -298,8 +298,9 @@ button {
 }
 
 .fab {
+  padding-right: 5px;
   font-family: FontAwesome;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 42px;
   font-weight: 400;
   letter-spacing: 0.025em;
@@ -1375,7 +1376,6 @@ details[open] summary::before {
   }
   .header-callback-input {
     text-align: center;
-    margin-top: -4px;
   }
   .footer-nav {
     transform: scale(0);
