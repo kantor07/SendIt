@@ -841,7 +841,6 @@ input[type=checkbox] {
 }
 
 summary {
-  position: relative;
   display: block;
 }
 
@@ -852,7 +851,7 @@ summary::-webkit-details-marker {
 summary::before {
   content: "";
   position: absolute;
-  right: 25px;
+  right: 50px;
   display: block;
   width: 8px;
   height: 8px;

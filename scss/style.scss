@@ -919,7 +919,6 @@ input[type="checkbox"] {
 }
 
 summary {
-  position: relative;
   display: block;
 }
 
@@ -930,7 +929,7 @@ summary::-webkit-details-marker {
 summary::before {
   content: "";
   position: absolute;
-  right: 25px;
+  right: 50px;
 
   @include arrow(8px, 8px, #008dcd, 2px);
   transform: rotate(135deg);
