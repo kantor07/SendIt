@@ -227,7 +227,7 @@ body {
   margin-bottom: 10px;
   font-family: "MyriadProRegular", sans-serif;
   height: 40px;
-  width: 280px;
+  min-width: 280px;
   border: 1px solid #363636;
   box-sizing: border-box;
   border-radius: 30px;
@@ -767,7 +767,7 @@ input[type=checkbox] {
 .guarantee-callback {
   margin-left: 30px;
   height: 40px;
-  width: 230px;
+  min-width: 230px;
   border: 1px solid #363636;
   box-sizing: border-box;
   border-radius: 30px;
@@ -926,7 +926,7 @@ details[open] summary::before {
   padding-left: 25px;
   margin-bottom: 10px;
   height: 40px;
-  width: 280px;
+  min-width: 280px;
   border: 1px solid #363636;
   box-sizing: border-box;
   border-radius: 30px;
@@ -1102,6 +1102,28 @@ details[open] summary::before {
   background-color: #94d1ec;
 }
 
+@media (min-width: 425px) {
+  .header-menu {
+    width: 430px;
+  }
+  .main-nav:hover .header-menu {
+    transform: scale(1, 1) translateX(-355px) translateY(-70px);
+  }
+  .hover-main {
+    width: 430px;
+    height: 4210px;
+  }
+  .callback-field,
+  .callback-btn,
+  .reviews-box-guarantee,
+  .send-href {
+    width: 385px;
+  }
+  .href-send {
+    display: flex;
+    justify-content: center;
+  }
+}
 @media (min-width: 620px) {
   .header {
     height: 525px;
