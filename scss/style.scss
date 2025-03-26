@@ -1214,6 +1214,15 @@ details[open] summary::before {
   .header {
     height: 525px;
     transform: translateY(-50px);
+    background: url(../img/slider2.jpg) center right no-repeat;
+    background-size: 100%;
+  }
+
+  .callback-field,
+  .callback-btn,
+  .reviews-box-guarantee,
+  .send-href {
+    width: 280px;
   }
 
   .main-nav:hover .header-menu {
