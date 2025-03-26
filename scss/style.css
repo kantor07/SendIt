@@ -1102,6 +1102,18 @@ details[open] summary::before {
   background-color: #94d1ec;
 }
 
+@media (min-width: 375px) {
+  .header-menu {
+    width: 380px;
+  }
+  .main-nav:hover .header-menu {
+    transform: scale(1, 1) translateX(-305px) translateY(-70px);
+  }
+  .hover-main {
+    width: 380px;
+    height: 4250px;
+  }
+}
 @media (min-width: 425px) {
   .header-menu {
     width: 430px;
