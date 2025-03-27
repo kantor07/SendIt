@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* подключение стилей Myriad Pro */
+/*font-face подключение стилей Myriad Pro */
 @font-face {
   font-family: "MyriadProBlack";
   src: url("../fonts/MyriadProBlack/MyriadPro-Black.eot");
@@ -75,7 +75,7 @@ body {
 }
 
 .nav-menu-link {
-  font-family: Myriad Pro, sans-serif;
+  font-family: "MyriadProRegular", sans-serif;
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
@@ -148,6 +148,8 @@ body {
   transform: translateX(-23px);
   height: 4315px;
   background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
 }
 
 .burgers-menu {
@@ -309,7 +311,7 @@ button {
 
 /*section send*/
 .send-header {
-  font-family: "MyriadProBlack", sans-serif;
+  font-family: "MyriadProBold", sans-serif;
   font-size: 32px;
   line-height: 38px;
   display: flex;
@@ -749,7 +751,7 @@ input[type=checkbox] {
 }
 
 .img-guarantee {
-  margin-top: 19px;
+  margin-top: 20px;
   margin-left: 17px;
   width: 28px;
   height: 26px;
@@ -1018,7 +1020,7 @@ details[open] summary::before {
 }
 
 .footer-nav-menu-link {
-  font-family: Myriad Pro;
+  font-family: "MyriadProRegular";
   font-size: 14px;
   line-height: 17px;
   color: #000000;
@@ -1085,6 +1087,7 @@ details[open] summary::before {
 }
 
 .footer-icon {
+  margin-right: 15px;
   width: 13px;
   height: 13px;
   display: flex;
@@ -1170,7 +1173,7 @@ details[open] summary::before {
     transform: translateY(-450px);
   }
   .send-header {
-    font-family: "MyriadProBold";
+    font-family: "MyriadProBold", sans-serif;
     font-size: 44px;
     line-height: 53px;
     color: #ffffff;
@@ -1182,7 +1185,7 @@ details[open] summary::before {
     color: #ffffff;
   }
   .main {
-    transform: translateY(-420px);
+    margin-top: -420px;
   }
   .send2 {
     margin-top: 25px;
@@ -1248,11 +1251,18 @@ details[open] summary::before {
   .callback-wrapper-form {
     padding-top: 50px;
   }
+  .callback-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .callback-input-span {
+    transform: translateY(-5px) translateX(20px);
+  }
+  .callback-btn {
+    margin-bottom: 10px;
+  }
   .reviews-box1 {
     transform: scale(1);
-  }
-  .review {
-    height: 396px;
   }
   .author-comment {
     font-size: 14px;
@@ -1262,6 +1272,9 @@ details[open] summary::before {
   .advantage-header {
     font-size: 36px;
     line-height: 43px;
+  }
+  .advantage-icon-block {
+    flex-wrap: nowrap;
   }
   .advantage-icon {
     width: 100px;
@@ -1310,6 +1323,20 @@ details[open] summary::before {
     font-size: 12px;
     line-height: 14px;
   }
+  .pagination-guarantee {
+    position: absolute;
+    left: -99999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .guarantee-reviews-text {
+    display: block;
+  }
+  .about-guarantee {
+    justify-content: left;
+  }
   .guarantee-icon {
     width: 100px;
     height: 100px;
@@ -1333,19 +1360,23 @@ details[open] summary::before {
     width: 49px;
     height: 51px;
   }
+  .guarantee-reviews-box {
+    display: flex;
+    flex-direction: column;
+  }
   .guarantee-header {
-    margin-top: 18px;
-    width: 218px;
-    height: 24px;
+    width: 220px;
+    height: 25px;
     font-size: 19px;
-    line-height: 10px;
   }
   .guarantee-text {
+    padding-left: 0px;
     width: 220px;
-    margin-top: -30px;
+    height: 75px;
   }
   .guarantee-callback {
     width: 220px;
+    margin: 20px 20px 40px 0px;
   }
   .box-after {
     transform: scale(1);
@@ -1362,41 +1393,42 @@ details[open] summary::before {
   .question-details {
     height: 48px;
   }
-  .question-text {
+  .question-text,
+  .answer-text {
+    width: 650px;
     padding-left: 31px;
     font-size: 17px;
     line-height: 19px;
   }
   .questions {
-    height: 477px;
+    min-height: 435px;
+  }
+  details[open] summary::before {
+    right: 50px;
   }
   .partners {
-    height: 112px;
-    transform: translateY(-420px);
+    height: 110px;
   }
   .href-partners-icon-after {
     transform: scale(1);
     flex: 1 1;
   }
   .partners-box {
+    padding: 15px 25px 40px;
     width: 665px;
-    padding-left: 40px;
-    padding-right: 25px;
-    padding-top: 17px;
-  }
-  .footer {
-    transform: translateY(-420px);
+    height: 25px;
   }
   .header-send4-text {
     font-size: 20px;
     line-height: 24px;
   }
   .send4-callback-field {
-    padding-left: 25px;
     margin-bottom: 8px;
     height: 48px;
-    width: 220px;
-    font-family: "MyriadProRegular", sans-serif;
+    min-width: 220px;
+    border: 1px solid #363636;
+    box-sizing: border-box;
+    border-radius: 30px;
   }
   .footer-callback-btn {
     width: 220px;
@@ -1418,19 +1450,21 @@ details[open] summary::before {
     justify-content: space-between;
   }
   .header-callback-input {
+    margin: 0px 0px 10px 30px;
     text-align: center;
   }
   .footer-nav {
     transform: scale(0);
   }
   .footer-nav-after {
-    transform: scale(1) translateY(-50px) translateX(-40px);
+    transform: scale(1) translateY(-65px) translateX(-40px);
   }
   .footer-socials {
     transform: scale(1);
   }
   .fab {
-    font-family: FontAwesome;
+    font-family: "FontAwesome";
+    margin: 2px 0px 0px 3px;
     font-size: 6px;
     line-height: 42px;
     font-weight: 400;
