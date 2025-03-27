@@ -137,6 +137,13 @@ body {
   line-height: 17px;
   color: #ffffff;
   text-decoration: none;
+
+  &:hover {
+    font-family: "MyriadProBold", sans-serif;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 .nav-menu-header {

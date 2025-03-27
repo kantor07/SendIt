@@ -81,6 +81,11 @@ body {
   color: #ffffff;
   text-decoration: none;
 }
+.nav-menu-link:hover {
+  font-family: "MyriadProBold", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+}
 
 .nav-menu-header {
   display: flex;
