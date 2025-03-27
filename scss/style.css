@@ -1443,6 +1443,7 @@ details[open] summary::before {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .footer-send4 {
     display: flex;
@@ -1450,7 +1451,7 @@ details[open] summary::before {
     justify-content: space-between;
   }
   .header-callback-input {
-    margin: 0px 0px 10px 30px;
+    margin: 0px 0px 10px 0px;
     text-align: center;
   }
   .footer-nav {

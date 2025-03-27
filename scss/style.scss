@@ -1579,6 +1579,7 @@ details[open] summary::before {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .footer-send4 {
@@ -1588,7 +1589,7 @@ details[open] summary::before {
   }
 
   .header-callback-input {
-    margin: 0px 0px 10px 30px;
+    margin: 0px 0px 10px 0px;
     text-align: center;
   }
 
