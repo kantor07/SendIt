@@ -329,6 +329,7 @@ input,
 button {
   outline: none;
   border: none;
+  background: #ffffff;
 }
 
 .icon {
@@ -1177,6 +1178,12 @@ details[open] summary::before {
   }
 }
 
+.feedback-wrapper {
+  width: 1px;
+  height: 1px;
+  transform: scale(0);
+}
+
 @media (min-width: 375px) {
   .header-menu {
     min-width: 380px;
@@ -1620,5 +1627,122 @@ details[open] summary::before {
     font-weight: 400;
     letter-spacing: 0.025em;
     color: white;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* feedback */
+  .feedback-wrapper {
+    transform: scale(1, 1) translateX(0px) translateY(-350px);
+    border: 3px solid black;
+
+    position: absolute;
+    width: 955px;
+    height: 3750px;
+
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(7.5px);
+  }
+
+  .feedback {
+    position: absolute;
+
+    width: 460px;
+    height: 335px;
+
+    left: 30%;
+    top: 50%;
+
+    background: #ffffff;
+
+    border-radius: 32px;
+
+    align-content: center;
+  }
+
+  .feedback-close-btn span {
+    @include burger(25px, 1px, #008dcd);
+
+    margin-bottom: 13px;
+
+    transform: rotate(45deg) scale(0.88);
+    transform-origin: left top;
+  }
+
+  .feedback-close-btn::after {
+    content: "";
+    @include burger(25px, 1px, #008dcd);
+    transform: rotate(-45deg) scale(0.88);
+    transform-origin: left bottom;
+  }
+
+  .feedback-header {
+    text-align: center;
+
+    font-family: "MyriadProSemibold", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+  }
+
+  .feedback-form {
+    margin-left: 50px;
+  }
+
+  .feedback-form::-webkit-input-placeholder {
+    font-family: "MyriadProRegular", sans-serif;
+
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #008dcd;
+  }
+
+  .name-field,
+  .tel-field,
+  .feedback-btn {
+    width: 360px;
+    height: 50px;
+    padding-left: 25px;
+    margin-bottom: 10px;
+
+    font-family: "MyriadProRegular", sans-serif;
+    @include btn(360px, 50px);
+
+    border: 1px solid #008dcd;
+
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #008dcd;
+  }
+  .feedback-btn {
+    background: #008dcd;
+  }
+
+  .feedback-btn-span {
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+
+    font-family: "MyriadProBlack", sans-serif;
+    text-transform: uppercase;
+  }
+
+  .img-send2,
+  .send2-header,
+  .send2-info,
+  .callback-input-span,
+  .reviews-box1,
+  .box-after,
+  .href-partners-icon-after,
+  .footer-nav-after,
+  .footer-socials {
+    transform: none;
+  }
+
+  summary::before {
+    position: fixed;
   }
 }
