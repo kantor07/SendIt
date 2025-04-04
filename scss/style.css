@@ -133,25 +133,26 @@ body {
 }
 
 .header-menu {
-  width: 320px;
   padding-top: 13px;
+  width: 100%;
   height: 616px;
   background: #ffffff;
   position: absolute;
+  top: 0px;
+  left: 0px;
   transform: scale(0, 0);
-  transform-origin: left top;
+  transform-origin: right top;
   transition: 0.5s;
 }
 
 .main-nav:hover .header-menu {
-  transform: scale(1, 1) translateX(-248px) translateY(-70px);
+  transform: scale(1, 1);
 }
 
 .hover-main {
-  margin-top: 15px;
-  width: 320px;
-  transform: translateX(-23px);
-  height: 4315px;
+  margin: 15px -40px 0px 0px;
+  transform: translateX(-20px);
+  height: 640vh;
   background: rgba(0, 0, 0, 0.2);
   -webkit-backdrop-filter: blur(7.5px);
           backdrop-filter: blur(7.5px);
@@ -1117,30 +1118,11 @@ details[open] summary::before {
   transform: scale(0);
 }
 
-@media (min-width: 375px) {
-  .header-menu {
-    min-width: 380px;
-  }
-  .main-nav:hover .header-menu {
-    transform: scale(1, 1) translateX(-305px) translateY(-70px);
-  }
-  .hover-main {
-    width: 380px;
-    height: 4250px;
-  }
-}
 @media (min-width: 425px) {
   .header {
     height: 320px;
     background: url(../img/slider2.jpg) center right no-repeat;
     background-size: 160%;
-  }
-  .header-menu,
-  .hover-main {
-    width: 430px;
-  }
-  .main-nav:hover .header-menu {
-    transform: scale(1, 1) translateX(-355px) translateY(-70px);
   }
   .callback-field,
   .callback-btn,
@@ -1484,14 +1466,11 @@ details[open] summary::before {
     letter-spacing: 0.025em;
     color: white;
   }
-}
-@media (min-width: 1024px) {
   /* feedback */
   .feedback-wrapper {
     transform: scale(1, 1) translateX(0px) translateY(-350px);
-    border: 3px solid black;
     position: absolute;
-    width: 955px;
+    min-width: 590px;
     height: 3750px;
     background: rgba(0, 0, 0, 0.2);
     -webkit-backdrop-filter: blur(7.5px);
@@ -1507,20 +1486,23 @@ details[open] summary::before {
     border-radius: 32px;
     align-content: center;
   }
+  .feedback-close-btn {
+    transform: scale(1, 1) translateX(420px) translateY(-20px);
+  }
   .feedback-close-btn span {
     display: block;
-    width: 25px;
+    width: 20px;
     height: 1px;
     background-color: #008dcd;
     transform: scale(1.3);
-    margin-bottom: 13px;
+    margin-bottom: 11px;
     transform: rotate(45deg) scale(0.88);
     transform-origin: left top;
   }
   .feedback-close-btn::after {
     content: "";
     display: block;
-    width: 25px;
+    width: 20px;
     height: 1px;
     background-color: #008dcd;
     transform: scale(1.3);
@@ -1537,7 +1519,9 @@ details[open] summary::before {
   .feedback-form {
     margin-left: 50px;
   }
-  .feedback-form::-webkit-input-placeholder {
+  .feedback-form::-webkit-input-placeholder,
+  .name-field::placeholder,
+  .tel-field::placeholder {
     font-family: "MyriadProRegular", sans-serif;
     font-size: 16px;
     line-height: 19px;
