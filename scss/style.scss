@@ -394,10 +394,17 @@ button {
 .send2-info {
   padding-bottom: 17px;
 }
-.send-href {
+
+.btn-send {
+  height: 50px;
   width: 280px;
-  height: 48px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
   background: #008dcd;
+
   border-radius: 30px;
   transition: 0.5s;
 
@@ -410,15 +417,13 @@ button {
   }
 }
 
-.href-send {
-  padding-top: 16px;
-  padding-bottom: 20px;
-  text-decoration: none;
-  display: flex;
-  justify-content: flex-end;
+.send-btn {
+  &:hover .feedback-wrapper {
+    transform: scale(1, 1);
+  }
 }
 
-.send-href-span {
+.send-btn-span {
   padding-right: 25px;
 
   font-family: "MyriadProBlack", sans-serif;
@@ -1183,10 +1188,116 @@ details[open] summary::before {
   }
 }
 
+/* feedback */
 .feedback-wrapper {
-  width: 1px;
-  height: 1px;
-  transform: scale(0);
+  transform: scale(0, 0);
+
+  position: absolute;
+
+  top: 0px;
+  right: 0px;
+
+  width: 100%;
+  height: 720vh;
+
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(7.5px);
+}
+
+.feedback {
+  position: absolute;
+
+  width: 320px;
+  height: 315px;
+
+  left: 50%;
+  top: 50%;
+
+  background: #ffffff;
+
+  border-radius: 32px;
+
+  align-content: center;
+
+  transform: translate(-50%, -50%);
+}
+
+.feedback-close-btn {
+  transform: scale(1, 1) translateX(280px) translateY(5px);
+}
+
+.feedback-close-btn span {
+  @include burger(20px, 1px, #008dcd);
+
+  margin-bottom: 11px;
+
+  transform: rotate(45deg) scale(0.88);
+  transform-origin: left top;
+}
+
+.feedback-close-btn::after {
+  content: "";
+  @include burger(20px, 1px, #008dcd);
+  transform: rotate(-45deg) scale(0.88);
+  transform-origin: left bottom;
+}
+
+.feedback-header {
+  text-align: center;
+
+  font-family: "MyriadProSemibold", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+.feedback-form {
+  text-align: center;
+}
+
+.feedback-form::-webkit-input-placeholder,
+.name-field::placeholder,
+.tel-field::placeholder {
+  font-family: "MyriadProRegular", sans-serif;
+
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #008dcd;
+}
+
+.name-field,
+.tel-field,
+.feedback-btn {
+  padding-left: 25px;
+  margin-bottom: 10px;
+
+  width: 280px;
+  height: 50px;
+
+  font-family: "MyriadProRegular", sans-serif;
+
+  border: 1px solid #008dcd;
+  border-radius: 32px;
+
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #008dcd;
+}
+
+.feedback-btn {
+  background: #008dcd;
+}
+
+.feedback-btn-span {
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+
+  font-family: "MyriadProBlack", sans-serif;
+  text-transform: uppercase;
 }
 
 @media (min-width: 425px) {
@@ -1198,14 +1309,8 @@ details[open] summary::before {
 
   .callback-field,
   .callback-btn,
-  .reviews-box-guarantee,
-  .send-href {
+  .reviews-box-guarantee {
     width: 385px;
-  }
-
-  .href-send {
-    display: flex;
-    justify-content: center;
   }
 }
 
@@ -1217,10 +1322,27 @@ details[open] summary::before {
     background-size: 100%;
   }
 
+  .feedback {
+    width: 440px;
+    height: 335px;
+  }
+
+  .feedback-close-btn {
+    transform: scale(1, 1) translateX(400px) translateY(-10px);
+  }
+
+  .name-field,
+  .tel-field {
+    width: 330px;
+  }
+
+  .feedback-btn {
+    width: 360px;
+  }
+
   .callback-field,
   .callback-btn,
-  .reviews-box-guarantee,
-  .send-href {
+  .reviews-box-guarantee {
     width: 280px;
   }
 
@@ -1608,110 +1730,6 @@ details[open] summary::before {
     font-weight: 400;
     letter-spacing: 0.025em;
     color: white;
-  }
-
-  /* feedback */
-  .feedback-wrapper {
-    transform: scale(1, 1) translateX(0px) translateY(-350px);
-
-    position: absolute;
-    min-width: 590px;
-    height: 3750px;
-
-    background: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(7.5px);
-  }
-
-  .feedback {
-    position: absolute;
-
-    width: 460px;
-    height: 335px;
-
-    left: 30%;
-    top: 50%;
-
-    background: #ffffff;
-
-    border-radius: 32px;
-
-    align-content: center;
-  }
-
-  .feedback-close-btn {
-    transform: scale(1, 1) translateX(420px) translateY(-20px);
-  }
-
-  .feedback-close-btn span {
-    @include burger(20px, 1px, #008dcd);
-
-    margin-bottom: 11px;
-
-    transform: rotate(45deg) scale(0.88);
-    transform-origin: left top;
-  }
-
-  .feedback-close-btn::after {
-    content: "";
-    @include burger(20px, 1px, #008dcd);
-    transform: rotate(-45deg) scale(0.88);
-    transform-origin: left bottom;
-  }
-
-  .feedback-header {
-    text-align: center;
-
-    font-family: "MyriadProSemibold", sans-serif;
-    font-size: 20px;
-    line-height: 24px;
-
-    color: #000000;
-  }
-
-  .feedback-form {
-    margin-left: 50px;
-  }
-
-  .feedback-form::-webkit-input-placeholder,
-  .name-field::placeholder,
-  .tel-field::placeholder {
-    font-family: "MyriadProRegular", sans-serif;
-
-    font-size: 16px;
-    line-height: 19px;
-
-    color: #008dcd;
-  }
-
-  .name-field,
-  .tel-field,
-  .feedback-btn {
-    width: 360px;
-    height: 50px;
-    padding-left: 25px;
-    margin-bottom: 10px;
-
-    font-family: "MyriadProRegular", sans-serif;
-    @include btn(360px, 50px);
-
-    border: 1px solid #008dcd;
-
-    font-size: 16px;
-    line-height: 19px;
-
-    color: #008dcd;
-  }
-  .feedback-btn {
-    background: #008dcd;
-  }
-
-  .feedback-btn-span {
-    font-size: 16px;
-    line-height: 19px;
-    color: #ffffff;
-
-    font-family: "MyriadProBlack", sans-serif;
-    text-transform: uppercase;
   }
 
   .img-send2,
