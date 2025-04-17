@@ -369,9 +369,8 @@ button {
 }
 
 /*section send2*/
-.send2 {
-  margin-top: 27px;
-  margin-bottom: 27px;
+.send2-wrapper {
+  margin: 27px 0px;
   background: #f7f7f7;
 }
 
@@ -1225,9 +1224,8 @@ details[open] summary::before {
 @media (min-width: 620px) {
   .header {
     height: 525px;
-    transform: translateY(-50px);
+    transform: translateY(-55px);
     background: url(../img/slider2.jpg) center right no-repeat;
-    background-size: 100%;
   }
   .feedback {
     width: 440px;
@@ -1252,14 +1250,13 @@ details[open] summary::before {
     transform: scale(0);
   }
   .wrapper {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0px 30px;
   }
   .nav {
     transform: scale(0);
   }
   .nav-after {
-    min-width: 720px;
+    min-width: 620px;
     transform: scale(1) translateX(-40px);
   }
   .send {
@@ -1281,19 +1278,18 @@ details[open] summary::before {
   .main {
     margin-top: -420px;
   }
-  .send2 {
-    margin-top: 25px;
-    margin-bottom: 34px;
-    height: 314px;
+  .send2-wrapper {
+    margin: 25px 0px 35px 0px;
+    height: 315px;
   }
   .send2-header {
     font-size: 36px;
     line-height: 43px;
-    transform: translateY(-222px);
+    transform: translateY(-165px);
   }
   .send2-info {
     width: 280px;
-    transform: translateY(-245px);
+    transform: translateY(-190px);
   }
   .send2-text {
     padding-top: 10px;
@@ -1302,8 +1298,8 @@ details[open] summary::before {
     line-height: 17px;
   }
   .img-send2 {
-    width: 398px;
-    transform: translateY(55px) translateX(297px);
+    width: 290px;
+    transform: translateY(100px) translateX(300px);
   }
   .guide-wrapper {
     padding-top: 38px;
@@ -1344,6 +1340,7 @@ details[open] summary::before {
   }
   .callback-wrapper-form {
     padding-top: 50px;
+    transform: translateX(-100px);
   }
   .callback-form {
     display: flex;
@@ -1566,9 +1563,6 @@ details[open] summary::before {
     letter-spacing: 0.025em;
     color: white;
   }
-  .img-send2,
-  .send2-header,
-  .send2-info,
   .callback-input-span,
   .reviews-box1,
   .box-after,
@@ -1579,5 +1573,20 @@ details[open] summary::before {
   }
   summary::before {
     position: fixed;
+  }
+}
+@media (min-width: 720px) {
+  .img-send2 {
+    width: 290px;
+    transform: translateY(100px) translateX(300px);
+  }
+  .send2-info {
+    width: 280px;
+    transform: translateY(-190px);
+  }
+  .send2-header {
+    font-size: 36px;
+    line-height: 43px;
+    transform: translateY(-165px);
   }
 }/*# sourceMappingURL=style.css.map */
