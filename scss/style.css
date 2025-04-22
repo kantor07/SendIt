@@ -1354,6 +1354,9 @@ details[open] summary::before {
   .pagination-right {
     translate: 0px -65px;
   }
+  .pagination-partners {
+    translate: 0px 10px;
+  }
   .about-reviews-box {
     margin: 0px 40px;
     flex-grow: 1;
