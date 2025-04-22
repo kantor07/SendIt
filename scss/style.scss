@@ -499,7 +499,7 @@ button {
 /*section callback*/
 
 .callback {
-  margin-top: 32px;
+  margin-top: 30px;
   margin-bottom: 7px;
   background: #008dcd;
 }
@@ -605,17 +605,18 @@ input[type="checkbox"] {
 }
 
 /* section guarantee pagination */
-
+.pagination-right,
 .pagination-left {
   @include arrow();
-  transform: rotate(-135deg) scale(1.5);
   translate: 0px -10px;
 }
 
+.pagination-left {
+  transform: rotate(-135deg) scale(1.5);
+}
+
 .pagination-right {
-  @include arrow();
   transform: rotate(45deg) scale(1.5);
-  translate: 0px -10px;
 }
 
 .pagination-partners {
@@ -655,7 +656,6 @@ input[type="checkbox"] {
   width: 230px;
 
   display: flex;
-  flex-grow: 1;
 }
 
 .about-reviews-author {
@@ -1415,7 +1415,6 @@ details[open] summary::before {
 
   .guide-wrapper {
     padding-top: 38px;
-    margin-left: 44px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1450,6 +1449,10 @@ details[open] summary::before {
     align-items: center;
   }
 
+  .callback-wrapper-text {
+    transform: translateY(-30px);
+  }
+
   .callback-header {
     min-width: 392px;
   }
@@ -1459,7 +1462,6 @@ details[open] summary::before {
   }
 
   .callback-wrapper-form {
-    padding-top: 50px;
     transform: translateX(-100px);
   }
 
@@ -1469,11 +1471,27 @@ details[open] summary::before {
   }
 
   .callback-input-span {
-    transform: translateY(-5px) translateX(20px);
+    transform: translateY(-4px) translateX(20px);
   }
 
   .callback-btn {
     margin-bottom: 10px;
+  }
+
+  .pagination-left,
+  .pagination-right {
+    translate: 0px -65px;
+  }
+
+  .about-reviews-box {
+    margin: 0px 40px;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+
+  .reviews-box,
+  .reviews-box1 {
+    width: 280px;
   }
 
   .reviews-box1 {
@@ -1730,8 +1748,6 @@ details[open] summary::before {
     color: white;
   }
 
-  .callback-input-span,
-  .reviews-box1,
   .box-after,
   .href-partners-icon-after,
   .footer-nav-after,
