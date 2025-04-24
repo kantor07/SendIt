@@ -771,7 +771,7 @@ input[type=checkbox] {
 .guarantee-callback {
   margin-left: 30px;
   height: 40px;
-  min-width: 230px;
+  min-width: 200px;
   border: 1px solid #363636;
   box-sizing: border-box;
   border-radius: 30px;
@@ -1443,7 +1443,6 @@ details[open] summary::before {
     height: 75px;
   }
   .guarantee-callback {
-    width: 220px;
     margin: 20px 20px 40px 0px;
   }
   .box-after {
@@ -1558,17 +1557,7 @@ details[open] summary::before {
 }
 @media (min-width: 700px) {
   .img-send2 {
-    width: 290px;
-    transform: translateY(100px) translateX(300px);
-  }
-  .send2-info {
-    width: 280px;
-    transform: translateY(-190px);
-  }
-  .send2-header {
-    font-size: 36px;
-    line-height: 43px;
-    transform: translateY(-165px);
+    width: 370px;
   }
   .pagination-guarantee {
     position: absolute;
@@ -1629,9 +1618,6 @@ details[open] summary::before {
     margin: 0px;
   }
   .guarantee-reviews-box {
-    width: 280px;
-  }
-  .header-callback-input {
-    margin-right: -10px;
+    min-width: 200px;
   }
 }/*# sourceMappingURL=style.css.map */

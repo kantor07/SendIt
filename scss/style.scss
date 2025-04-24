@@ -854,7 +854,7 @@ input[type="checkbox"] {
 .guarantee-callback {
   margin-left: 30px;
 
-  @include btn(230px, 40px);
+  @include btn(200px, 40px);
   border: none;
 
   background: #008dcd;
@@ -1594,7 +1594,6 @@ details[open] summary::before {
   }
 
   .guarantee-callback {
-    width: 220px;
     margin: 20px 20px 40px 0px;
   }
 
@@ -1734,19 +1733,7 @@ details[open] summary::before {
 
 @media (min-width: 700px) {
   .img-send2 {
-    width: 290px;
-    transform: translateY(100px) translateX(300px);
-  }
-
-  .send2-info {
-    width: 280px;
-    transform: translateY(-190px);
-  }
-
-  .send2-header {
-    font-size: 36px;
-    line-height: 43px;
-    transform: translateY(-165px);
+    width: 370px;
   }
 
   .pagination-guarantee {
@@ -1819,10 +1806,6 @@ details[open] summary::before {
   }
 
   .guarantee-reviews-box {
-    width: 280px;
-  }
-
-  .header-callback-input {
-    margin-right: -10px;
+    min-width: 200px;
   }
 }
