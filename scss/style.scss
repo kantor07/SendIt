@@ -533,7 +533,7 @@ button {
   margin-bottom: 9px;
 
   width: 280px;
-  height: 48px;
+  height: 50px;
 
   font-family: "MyriadProRegular", sans-serif;
   border: 1px solid #ffffff;
@@ -544,7 +544,7 @@ button {
 
 .callback-btn {
   width: 280px;
-  height: 48px;
+  height: 50px;
 
   background: #ffcc00;
   border-radius: 30px;
@@ -1308,8 +1308,13 @@ details[open] summary::before {
 
   .callback-field,
   .callback-btn,
-  .reviews-box-guarantee {
+  .footer-callback-btn {
     width: 385px;
+  }
+
+  .footer-callback-btn {
+    padding-right: 35px;
+    text-align: end;
   }
 }
 
@@ -1517,7 +1522,7 @@ details[open] summary::before {
   }
 
   .advantage-icon-block {
-    padding-left: 25px;
+    padding-left: 15px;
     flex-wrap: nowrap;
   }
 
@@ -1603,8 +1608,6 @@ details[open] summary::before {
   }
 
   .reviews-box-guarantee {
-    margin-right: 150px;
-
     height: 290px;
 
     display: flex;
@@ -1613,7 +1616,7 @@ details[open] summary::before {
   }
 
   .question-details {
-    height: 48px;
+    height: 50px;
   }
 
   .question-text,
@@ -1659,12 +1662,12 @@ details[open] summary::before {
   .send4-callback-field {
     margin-bottom: 8px;
 
-    @include btn(220px, 48px);
+    @include btn(220px, 50px);
   }
 
   .footer-callback-btn {
     width: 220px;
-    height: 48px;
+    height: 50px;
   }
 
   .footer-send4-callback {
@@ -1687,8 +1690,7 @@ details[open] summary::before {
   }
 
   .header-callback-input {
-    margin: 0px 0px 10px 0px;
-    text-align: center;
+    margin: 0px -20px 10px 0px;
   }
 
   .footer-nav {
@@ -1713,7 +1715,6 @@ details[open] summary::before {
     color: white;
   }
 
-  .box-after,
   .href-partners-icon-after,
   .footer-socials {
     transform: none;
@@ -1731,7 +1732,7 @@ details[open] summary::before {
   }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 700px) {
   .img-send2 {
     width: 290px;
     transform: translateY(100px) translateX(300px);
@@ -1804,9 +1805,24 @@ details[open] summary::before {
     height: 36px;
   }
 
-  /*
-  summary::before {
-    position: fixed;
+  .box-after1 {
+    transform: scale(1);
   }
-  */
+
+  .guarantee-wrapper {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .reviews-box-guarantee {
+    margin: 0px;
+  }
+
+  .guarantee-reviews-box {
+    width: 280px;
+  }
+
+  .header-callback-input {
+    margin-right: -10px;
+  }
 }
