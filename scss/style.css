@@ -82,9 +82,7 @@ body {
   text-decoration: none;
 }
 .nav-menu-link:hover {
-  font-family: "MyriadProBold", sans-serif;
-  font-size: 18px;
-  line-height: 22px;
+  font-family: "MyriadProBlack", sans-serif;
 }
 
 .nav-menu-header {
@@ -318,7 +316,7 @@ button {
 
 /*section send*/
 .send-header {
-  font-family: "MyriadProBold", sans-serif;
+  font-family: "MyriadProBlack", sans-serif;
   font-size: 32px;
   line-height: 38px;
   display: flex;
@@ -1262,13 +1260,11 @@ details[open] summary::before {
     transform: translateY(-450px);
   }
   .send-header {
-    font-family: "MyriadProBold", sans-serif;
     font-size: 44px;
     line-height: 53px;
     color: #ffffff;
   }
   .send-text {
-    font-family: "MyriadProBlack", sans-serif;
     font-size: 28px;
     line-height: 34px;
     color: #ffffff;
@@ -1638,6 +1634,7 @@ details[open] summary::before {
   }
 }
 @media (min-width: 1024px) {
+  /* header */
   .header {
     background: url(../img/slider3.jpg) center center no-repeat;
     background-size: 100%;
@@ -1646,6 +1643,18 @@ details[open] summary::before {
   .logo-img {
     width: 160px;
     height: 45px;
+  }
+  .nav-menu-link {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  /* send */
+  .send {
+    width: 850px;
+  }
+  .send-header {
+    font-size: 48px;
+    line-height: 58px;
   }
   .img-send2 {
     width: 660px;
