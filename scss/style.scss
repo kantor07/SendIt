@@ -114,6 +114,7 @@ body {
 
 .wrapper {
   min-width: 280px;
+
   margin: 0 auto;
   padding: 0px 20px;
   outline: 1px solid red;
@@ -462,8 +463,8 @@ button {
 }
 
 .img-step1 {
-  width: 278px;
-  height: 188px;
+  width: 280px;
+  height: 190px;
 }
 
 .guide-step1-header {
@@ -585,6 +586,8 @@ input[type="checkbox"] {
 }
 
 .callback-input-span {
+  margin-left: 5px;
+
   font-family: "MyriadProLight", sans-serif;
   font-size: 10px;
   line-height: 0px;
@@ -629,7 +632,7 @@ input[type="checkbox"] {
 
 .reviews-text {
   min-width: 230px;
-  max-width: 275px;
+
   display: flex;
   justify-content: start;
 }
@@ -665,7 +668,7 @@ input[type="checkbox"] {
 }
 
 .about-reviews-author {
-  margin-top: -22px;
+  translate: 0px -20px;
   height: 110px;
 }
 
@@ -1420,7 +1423,7 @@ details[open] summary::before {
   }
 
   .guide-wrapper {
-    padding-top: 38px;
+    padding-top: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1824,7 +1827,7 @@ details[open] summary::before {
 }
 
 @media (min-width: 1024px) {
-  /* header */
+  /* section header */
 
   .header {
     background: url(../img/slider3.jpg) center center no-repeat;
@@ -1842,7 +1845,7 @@ details[open] summary::before {
     line-height: 22px;
   }
 
-  /* send */
+  /* section send */
 
   .send {
     width: 850px;
@@ -1853,8 +1856,331 @@ details[open] summary::before {
     line-height: 58px;
   }
 
+  .send-text {
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+  .btn-send {
+    width: 360px;
+    justify-content: center;
+  }
+
+  /* section send2 */
+
+  .send2-wrapper {
+    margin: 0px;
+
+    height: 455px;
+  }
+
+  .img-send2 {
+    width: 550px;
+    height: 335px;
+  }
+
+  .send2-header-wrapper {
+    padding-top: 60px;
+  }
+
+  .send2-text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  /* section guide */
+
+  .guide-step1 {
+    min-width: 460px;
+  }
+
+  .img-step1 {
+    width: 360px;
+    height: 270px;
+  }
+
+  .guide-step1-header {
+    font-size: 30px;
+  }
+
+  .guide-step1-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /* section send3 */
+
+  .send3-header {
+    width: 710px;
+
+    line-height: 43px;
+  }
+
+  /* section ccallback */
+
+  .callback-wrapper {
+    height: 220px;
+  }
+
+  .callback-wrapper-text,
+  .callback-text {
+    width: 755px;
+  }
+
+  .callback-header {
+    font-size: 38px;
+  }
+
+  .callback-text {
+    font-size: 20px;
+  }
+
+  .callback-wrapper-form {
+    transform: translateX(-150px);
+  }
+
+  .callback-field,
+  .callback-btn {
+    width: 360px;
+  }
+
+  .text-left {
+    justify-content: center;
+  }
+
+  /* section about */
+  /* section review */
+
+  .about-reviews-box {
+    justify-content: space-evenly;
+  }
+
+  .reviews-box,
+  .reviews-box1 {
+    width: 400px;
+  }
+
+  .img-reviews {
+    width: 160px;
+    height: 160px;
+  }
+
+  .author-name {
+    font-family: "MyriadProLight", sans-serif;
+    font-size: 36px;
+  }
+
+  .author-company {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .author-package,
+  .about-package,
+  .author-comment {
+    font-size: 16px;
+  }
+
+  /* section advantage */
+
+  .advantage-wrapper {
+    height: 495px;
+    padding: 100px 30px 0px 30px;
+  }
+
+  .icon-advantage {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .advantage-icon {
+    width: 130px;
+    height: 130px;
+  }
+
+  .advantage-img1 {
+    margin-top: 40px;
+    margin-left: 25px;
+    width: 84px;
+    height: 49px;
+  }
+
+  .advantage-text {
+    width: 130px;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .advantage-img2 {
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 62px;
+    height: 76px;
+  }
+
+  .advantage-img3 {
+    margin-top: 32px;
+    margin-left: 32px;
+    width: 66px;
+    height: 66px;
+  }
+
+  .advantage-img4 {
+    margin-top: 32px;
+    margin-left: 32px;
+    width: 61px;
+    height: 68px;
+  }
+
+  .advantage-img6 {
+    margin-top: 42px;
+    margin-left: 32px;
+    width: 74px;
+    height: 58px;
+  }
+
+  /* section guarantee */
+  .guarantee-wrapper {
+    margin: 0px;
+    padding: 80px 30px 65px 30px;
+  }
+
+  .guarantee-reviews-box {
+    width: 370px;
+    height: 365px;
+  }
+  .guarantee-icon {
+    width: 130px;
+    height: 130px;
+  }
+
+  .img-guarantee {
+    margin-top: 32px;
+    margin-left: 25px;
+    width: 75px;
+    height: 70px;
+  }
+
+  .guarantee-header {
+    margin: 25px 0px 0px 0px;
+
+    width: 355px;
+    height: 35px;
+
+    font-size: 25px;
+  }
+
+  .guarantee-text {
+    margin: 0px 0px 50px 0px;
+
+    width: 310px;
+
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .guarantee-callback {
+    margin: 0px;
+  }
+
+  .guarantee-href {
+    padding-right: 0px;
+  }
+
+  .guarantee-callback {
+    justify-content: center;
+  }
+
+  /* section guestions */
+}
+
+@media (min-width: 1224px) {
+  .wrapper {
+    width: 1170px;
+  }
+
   .img-send2 {
     width: 660px;
-    height: 340px;
+  }
+
+  .img-step1 {
+    width: 460px;
+    height: 310px;
+  }
+
+  .send3-header {
+    font-size: 36px;
+  }
+
+  .callback-header {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .callback-text {
+    font-size: 24px;
+    line-height: 23px;
+  }
+
+  .callback-wrapper-form {
+    transform: translateX(0px);
+  }
+
+  .reviews-box,
+  .reviews-box1 {
+    width: 460px;
+  }
+
+  .advantage-icon {
+    width: 160px;
+    height: 160px;
+  }
+
+  .advantage-img1 {
+    margin-top: 55px;
+    margin-left: 40px;
+  }
+
+  .advantage-text {
+    width: 160px;
+  }
+
+  .advantage-img2 {
+    margin-top: 45px;
+    margin-left: 55px;
+  }
+
+  .advantage-img3 {
+    margin-top: 47px;
+    margin-left: 47px;
+  }
+
+  .advantage-img4 {
+    margin-top: 51px;
+    margin-left: 46px;
+  }
+
+  .advantage-img6 {
+    margin-top: 57px;
+    margin-left: 47px;
+  }
+
+  .guarantee-icon {
+    width: 160px;
+    height: 160px;
+  }
+
+  .img-guarantee {
+    margin-top: 48px;
+    margin-left: 41px;
+  }
+
+  .guarantee-header {
+    font-size: 30px;
+  }
+
+  .guarantee-text {
+    width: 360px;
   }
 }
