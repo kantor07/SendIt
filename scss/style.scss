@@ -79,7 +79,7 @@
 @mixin btn($width: 280px, $height: 40px) {
   height: $height;
   min-width: $width;
-  border: 1px solid #363636;
+  outline: 1px solid #363636;
   box-sizing: border-box;
   border-radius: 30px;
 }
@@ -534,7 +534,7 @@ button {
   height: 50px;
 
   font-family: "MyriadProRegular", sans-serif;
-  border: 1px solid #ffffff;
+  outline: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 30px;
   background: #008dcd;
@@ -580,7 +580,7 @@ input[type="checkbox"] {
   width: 10px;
   height: 10px;
 
-  border: 1px solid #ffffff;
+  outline: 1px solid #ffffff;
 
   background-color: #008dcd;
 }
@@ -915,8 +915,6 @@ input[type="checkbox"] {
 
 .question-text,
 .answer-text {
-  /*width: 205px;*/
-
   padding: 10px 25px;
 
   font-family: "MyriadProRegular", sans-serif;
@@ -930,10 +928,10 @@ input[type="checkbox"] {
 }
 
 .answer-text {
-  /*width: 225px;*/
+  margin: 0px 1px 30px 1px;
   height: 80px;
-  border: 1px solid #ffffff;
-  border-radius: 32px;
+  outline: 1px solid #ffffff;
+  border-radius: 0px 0px 32px 32px;
 }
 
 summary {
@@ -958,6 +956,10 @@ details[open] summary::before {
 
   @include arrow(8px, 8px, #008dcd, 2px);
   transform: rotate(-45deg);
+}
+
+details[open] .question-details {
+  border-radius: 32px 32px 0px 0px;
 }
 
 .box-after,
@@ -1277,7 +1279,7 @@ details[open] summary::before {
 
   font-family: "MyriadProRegular", sans-serif;
 
-  border: 1px solid #008dcd;
+  outline: 1px solid #008dcd;
   border-radius: 32px;
 
   font-size: 16px;
@@ -2041,6 +2043,7 @@ details[open] summary::before {
   }
 
   /* section guarantee */
+
   .guarantee-wrapper {
     margin: 0px;
     padding: 80px 30px 65px 30px;
@@ -2092,7 +2095,46 @@ details[open] summary::before {
     justify-content: center;
   }
 
+  .img-guarantee2 {
+    margin-top: 20px;
+    margin-left: 27px;
+    width: 75px;
+    height: 82px;
+  }
+
+  .img-guarantee3 {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 67px;
+    height: 69px;
+  }
+
   /* section guestions */
+
+  .questions-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .question-details {
+    margin-right: 30px;
+    padding: 20px;
+
+    width: 410px;
+  }
+
+  .answer-text {
+    width: 392px;
+  }
+
+  summary::before {
+    right: auto;
+    margin-left: 390px;
+  }
+
+  details[open] summary::before {
+    right: auto;
+  }
 }
 
 @media (min-width: 1224px) {
@@ -2182,5 +2224,15 @@ details[open] summary::before {
 
   .guarantee-text {
     width: 360px;
+  }
+
+  .img-guarantee2 {
+    margin-top: 37px;
+    margin-left: 43px;
+  }
+
+  .img-guarantee3 {
+    margin-top: 45px;
+    margin-left: 45px;
   }
 }
