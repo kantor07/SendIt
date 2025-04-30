@@ -813,6 +813,7 @@ input[type=checkbox] {
 
 .question-details {
   margin-top: 10px;
+  padding: 20px;
   height: 80px;
   background: #ffffff;
   border-radius: 32px;
@@ -873,6 +874,7 @@ details[open] summary::before {
 
 details[open] .question-details {
   border-radius: 32px 32px 0px 0px;
+  padding: 20px;
 }
 
 .box-after,
