@@ -923,7 +923,7 @@ details[open] .question-details {
 
 /* section footer-send4 */
 .footer-send4-callback {
-  padding-top: 12px;
+  padding-top: 10px;
 }
 
 .send4-callback-field::-webkit-input-placeholder {
@@ -1509,7 +1509,7 @@ details[open] .question-details {
     height: 50px;
   }
   .footer-send4-callback {
-    padding-top: 33px;
+    padding-top: 35px;
   }
   .footer-callback {
     padding-top: 10px;
@@ -1520,6 +1520,7 @@ details[open] .question-details {
     flex-wrap: nowrap;
   }
   .footer-send4 {
+    padding-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1754,8 +1755,7 @@ details[open] .question-details {
   }
   /* section advantage */
   .advantage-wrapper {
-    height: 495px;
-    padding: 100px 30px 0px 30px;
+    padding: 70px 30px 100px 30px;
   }
   .icon-advantage {
     padding: 0px;
@@ -1803,7 +1803,7 @@ details[open] .question-details {
   /* section guarantee */
   .guarantee-wrapper {
     margin: 0px;
-    padding: 80px 30px 65px 30px;
+    padding: 50px 30px 65px 30px;
   }
   .guarantee-reviews-box {
     width: 370px;
