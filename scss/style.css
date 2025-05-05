@@ -368,7 +368,7 @@ button {
 
 /*section send2*/
 .send2-wrapper {
-  margin: 27px 0px;
+  padding: 30px;
   background: #f7f7f7;
 }
 
@@ -416,6 +416,8 @@ button {
 
 /*section send3*/
 .send3-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
   background: #f7f7f7;
 }
 
@@ -428,7 +430,6 @@ button {
 
 /*section callback*/
 .callback {
-  margin-top: 30px;
   margin-bottom: 7px;
   background: #008dcd;
 }
@@ -1229,10 +1230,6 @@ details[open] .question-details {
   }
 }
 @media (min-width: 620px) {
-  .header {
-    height: 525px;
-    transform: translateY(-55px);
-  }
   .feedback {
     width: 440px;
     height: 335px;
@@ -1258,6 +1255,7 @@ details[open] .question-details {
     padding: 0px 30px;
   }
   .nav {
+    padding-top: 0px;
     transform: scale(0);
   }
   .nav-after {
@@ -1266,7 +1264,8 @@ details[open] .question-details {
   }
   .send {
     width: 500px;
-    transform: translateY(-450px);
+    position: absolute;
+    top: 100px;
   }
   .send-header {
     font-size: 44px;
@@ -1278,13 +1277,7 @@ details[open] .question-details {
     line-height: 34px;
     color: #ffffff;
   }
-  .main,
-  .partners,
-  .footer {
-    translate: 0px -400px;
-  }
   .send2-wrapper {
-    margin: 25px 0px 35px 0px;
     display: flex;
     height: 315px;
   }
@@ -1634,12 +1627,14 @@ details[open] .question-details {
 }
 @media (min-width: 770px) {
   .header {
-    background: url(../img/slider3.jpg) center center no-repeat;
-    background-size: 140%;
-    transform: translateY(-70px);
+    height: 525px;
+    background: url(../img/slider3.jpg) 70% no-repeat;
   }
   .nav-after {
-    translate: 30px 30px;
+    translate: 0px -30px;
+  }
+  .send {
+    top: 50px;
   }
 }
 @media (min-width: 1024px) {
@@ -1675,7 +1670,6 @@ details[open] .question-details {
   }
   /* section send2 */
   .send2-wrapper {
-    margin: 0px;
     height: 455px;
   }
   .img-send2 {
