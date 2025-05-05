@@ -430,7 +430,6 @@ button {
 
 /*section callback*/
 .callback {
-  margin-bottom: 7px;
   background: #008dcd;
 }
 
@@ -1321,6 +1320,7 @@ details[open] .question-details {
     line-height: 19px;
   }
   .send3-wrapper {
+    height: 180px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1641,8 +1641,7 @@ details[open] .question-details {
   /* section header */
   .header {
     background: url(../img/slider3.jpg) center center no-repeat;
-    background-size: 100%;
-    transform: translateY(-80px);
+    background-size: auto;
   }
   .logo-img {
     width: 160px;
