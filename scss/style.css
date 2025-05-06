@@ -1646,7 +1646,7 @@ details[open] .question-details {
   }
   .logo-img {
     width: 160px;
-    height: 45px;
+    height: 50px;
   }
   .nav-menu-link {
     font-size: 18px;
@@ -1654,6 +1654,7 @@ details[open] .question-details {
   }
   /* section send */
   .send {
+    top: 100px;
     width: 850px;
   }
   .send-header {
@@ -1888,6 +1889,7 @@ details[open] .question-details {
     line-height: 36px;
   }
   .footer-callback {
+    padding-bottom: 10px;
     width: 750px;
   }
   .send4-callback-field,
@@ -1897,6 +1899,22 @@ details[open] .question-details {
   .header-callback-btn-span {
     display: flex;
     justify-content: center;
+  }
+  .footer-nav-menu-link {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .footer-text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .footer-icon {
+    width: 19px;
+    height: 19px;
+  }
+  .fab {
+    margin: 2px 5px 2px 7px;
+    font-size: 12px;
   }
 }
 @media (min-width: 1224px) {
