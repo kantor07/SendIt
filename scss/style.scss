@@ -114,6 +114,7 @@ body {
 
 .wrapper {
   min-width: 280px;
+  max-width: 1160px;
 
   margin: 0 auto;
   padding: 0px 20px;
@@ -416,6 +417,8 @@ button {
 }
 
 .send-btn {
+  padding-bottom: 30px;
+
   &:hover .feedback-wrapper {
     transform: scale(1, 1);
   }
@@ -434,7 +437,7 @@ button {
 /*section send2*/
 
 .send2-wrapper {
-  padding: 30px;
+  padding-top: 30px;
   background: #f7f7f7;
 }
 
@@ -895,6 +898,7 @@ input[type="checkbox"] {
 }
 
 .questions-header {
+  margin: 0px;
   padding-top: 25px;
 
   font-family: "MyriadProBlack", sans-serif;
@@ -1530,7 +1534,7 @@ details[open] .question-details {
   }
 
   .advantage-header {
-    padding-left: 30px;
+    padding: 0px 30px 30px 0px;
   }
 
   .advantage-icon-block {
@@ -1811,7 +1815,6 @@ details[open] .question-details {
   }
 
   .guarantee-wrapper {
-    margin: 0px;
     padding: 0px;
   }
 
@@ -2053,7 +2056,6 @@ details[open] .question-details {
   /* section guarantee */
 
   .guarantee-wrapper {
-    margin: 0px;
     padding: 50px 30px 65px 30px;
   }
 
@@ -2091,12 +2093,8 @@ details[open] .question-details {
     line-height: 19px;
   }
 
-  .guarantee-callback {
-    margin: 0px;
-  }
-
   .guarantee-href {
-    padding-right: 0px;
+    padding: 30px;
   }
 
   .guarantee-callback {
@@ -2200,9 +2198,9 @@ details[open] .question-details {
   }
 }
 
-@media (min-width: 1224px) {
-  .wrapper {
-    width: 1170px;
+@media (min-width: 1160px) {
+  .guide-wrapper {
+    padding-top: 40px;
   }
 
   .img-send2 {
@@ -2235,6 +2233,14 @@ details[open] .question-details {
   .reviews-box,
   .reviews-box1 {
     width: 460px;
+  }
+
+  .advantage-wrapper {
+    height: 435px;
+  }
+
+  .guarantee-wrapper {
+    height: 610px;
   }
 
   .advantage-icon {
@@ -2301,5 +2307,40 @@ details[open] .question-details {
 
   .header-send4-text {
     font-size: 30px;
+  }
+
+  .questions {
+    padding: 100px 0px;
+  }
+
+  .question {
+    width: 560px;
+  }
+
+  .partners {
+    height: 170px;
+  }
+
+  .partners-wrapper {
+    padding: 35px 30px;
+  }
+
+  .question-details {
+    margin-top: 30px;
+    width: 510px;
+  }
+
+  summary::before {
+    margin-left: 500px;
+  }
+
+  .answer-text {
+    width: 490px;
+  }
+}
+
+@media (min-width: 1224px) {
+  .send {
+    padding-left: 140px;
   }
 }
