@@ -382,9 +382,12 @@ button {
 }
 
 /*section send2*/
+.send2 {
+  background: #f7f7f7;
+}
+
 .send2-wrapper {
   padding-top: 30px;
-  background: #f7f7f7;
 }
 
 .img-send2 {
@@ -430,10 +433,13 @@ button {
 }
 
 /*section send3*/
+.send3 {
+  background: #f7f7f7;
+}
+
 .send3-wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
-  background: #f7f7f7;
 }
 
 .send3-header {
