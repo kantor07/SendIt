@@ -315,6 +315,17 @@ button {
   color: white;
 }
 
+.main,
+.partners,
+.footer {
+  margin-top: 300px;
+}
+
+.send {
+  translate: 0px 160px;
+  padding: 30px 0px;
+}
+
 /*section send*/
 .send-header {
   font-family: "MyriadProBlack", sans-serif;
@@ -1223,6 +1234,9 @@ details[open] .question-details {
     height: 415px;
     background-size: auto;
   }
+  .send {
+    translate: 0px 285px;
+  }
   .callback-field,
   .callback-btn,
   .footer-callback-btn {
@@ -1234,6 +1248,23 @@ details[open] .question-details {
   }
 }
 @media (min-width: 620px) {
+  .wrapper {
+    padding: 0px 30px;
+  }
+  .main,
+  .partners,
+  .footer {
+    margin-top: 0px;
+  }
+  .send-wrapper {
+    padding: 0px;
+  }
+  .send {
+    min-width: 400px;
+    max-width: 500px;
+    translate: 0px 0px;
+    padding: 0px 0px;
+  }
   .feedback {
     width: 440px;
     height: 335px;
@@ -1255,9 +1286,6 @@ details[open] .question-details {
   .main-nav:hover .header-menu {
     transform: scale(0);
   }
-  .wrapper {
-    padding: 0px 30px;
-  }
   .nav {
     padding-top: 0px;
     transform: scale(0);
@@ -1265,11 +1293,6 @@ details[open] .question-details {
   .nav-after {
     min-width: 620px;
     transform: scale(1) translateX(-40px);
-  }
-  .send {
-    width: 500px;
-    position: absolute;
-    top: 100px;
   }
   .send-header {
     font-size: 44px;
@@ -1638,9 +1661,6 @@ details[open] .question-details {
   .nav-after {
     translate: 0px -30px;
   }
-  .send {
-    top: 50px;
-  }
 }
 @media (min-width: 1024px) {
   /* section header */
@@ -1658,8 +1678,8 @@ details[open] .question-details {
   }
   /* section send */
   .send {
-    top: 100px;
-    width: 850px;
+    min-width: 500px;
+    max-width: 750px;
   }
   .send-header {
     font-size: 48px;
@@ -2025,10 +2045,5 @@ details[open] .question-details {
   }
   .answer-text {
     width: 490px;
-  }
-}
-@media (min-width: 1224px) {
-  .send {
-    padding-left: 140px;
   }
 }/*# sourceMappingURL=style.css.map */
