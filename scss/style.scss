@@ -369,9 +369,7 @@ button {
   color: white;
 }
 
-.main,
-.partners,
-.footer {
+.main {
   margin-top: 300px;
 }
 
@@ -432,6 +430,10 @@ button {
 
   &:hover .feedback-wrapper {
     transform: scale(1, 1);
+  }
+
+  &:hover .main {
+    transform: none;
   }
 }
 
@@ -683,12 +685,13 @@ input[type="checkbox"] {
 }
 
 .img-reviews {
+  margin-top: 20px;
+
   width: 100px;
   height: 100px;
 }
 
 .about-reviews-author {
-  translate: 0px -20px;
   height: 110px;
 }
 
@@ -732,7 +735,7 @@ input[type="checkbox"] {
 }
 
 .reviews-box1 {
-  transform: scale(0);
+  display: none;
 }
 
 /*section advantage*/
@@ -994,7 +997,7 @@ details[open] .question-details {
 
 .box-after,
 .box-after1 {
-  transform: scale(0);
+  display: none;
 }
 
 /*section partners*/
@@ -1222,6 +1225,8 @@ details[open] .question-details {
 
 /* feedback */
 .feedback-wrapper {
+  translate: 20px -410px;
+
   transform: scale(0, 0);
 
   position: absolute;
@@ -1230,7 +1235,7 @@ details[open] .question-details {
   right: 0px;
 
   width: 100%;
-  height: 720vh;
+  height: 800vh;
 
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(7.5px);
@@ -1342,6 +1347,10 @@ details[open] .question-details {
     translate: 0px 285px;
   }
 
+  .feedback-wrapper {
+    height: 780vh;
+  }
+
   .callback-field,
   .callback-btn,
   .footer-callback-btn {
@@ -1359,9 +1368,7 @@ details[open] .question-details {
     padding: 0px 30px;
   }
 
-  .main,
-  .partners,
-  .footer {
+  .main {
     margin-top: 0px;
   }
 
@@ -1373,8 +1380,12 @@ details[open] .question-details {
     min-width: 400px;
     max-width: 500px;
 
-    translate: 0px 0px;
-    padding: 0px 0px;
+    translate: none;
+    padding: 0px;
+  }
+
+  .feedback-wrapper {
+    height: 660vh;
   }
 
   .feedback {
@@ -1495,25 +1506,20 @@ details[open] .question-details {
   }
 
   .callback-wrapper {
+    padding: 30px;
+
     display: flex;
     justify-content: space-between;
-    align-items: center;
-  }
-
-  .callback-wrapper-text {
-    transform: translateY(-30px);
   }
 
   .callback-header {
-    min-width: 392px;
+    margin: 0px;
+    padding-top: 0px;
   }
 
   .callback-text {
-    width: 296px;
-  }
-
-  .callback-wrapper-form {
-    transform: translateX(-100px);
+    padding: 0px;
+    width: 295px;
   }
 
   .callback-form {
@@ -1550,7 +1556,7 @@ details[open] .question-details {
   }
 
   .reviews-box1 {
-    transform: scale(1);
+    display: block;
   }
 
   .author-comment {
@@ -1645,7 +1651,7 @@ details[open] .question-details {
   }
 
   .box-after {
-    transform: scale(1);
+    display: block;
   }
 
   .advantage-wrapper {
@@ -1842,7 +1848,7 @@ details[open] .question-details {
   }
 
   .box-after1 {
-    transform: scale(1);
+    display: block;
   }
 
   .guarantee-wrapper {
@@ -1865,6 +1871,10 @@ details[open] .question-details {
 
   .nav-after {
     translate: 0px -30px;
+  }
+
+  .feedback-wrapper {
+    height: 670vh;
   }
 }
 
@@ -1906,6 +1916,10 @@ details[open] .question-details {
   .btn-send {
     width: 360px;
     justify-content: center;
+  }
+
+  .feedback-wrapper {
+    height: 745vh;
   }
 
   /* section send2 */
@@ -2225,6 +2239,10 @@ details[open] .question-details {
 }
 
 @media (min-width: 1160px) {
+  .feedback-wrapper {
+    height: 830vh;
+  }
+
   .guide-wrapper {
     padding-top: 40px;
   }
@@ -2363,7 +2381,4 @@ details[open] .question-details {
   .answer-text {
     width: 490px;
   }
-}
-
-@media (min-width: 1224px) {
 }
