@@ -1247,6 +1247,7 @@ details[open] .question-details {
     translate: 0px 285px;
   }
   .feedback-wrapper {
+    max-width: 100%;
     height: 780vh;
   }
   .callback-field,
@@ -1423,7 +1424,8 @@ details[open] .question-details {
     line-height: 43px;
   }
   .advantage-header {
-    padding: 0px 30px 30px 0px;
+    padding: 0px 30px 55px 0px;
+    margin: 0;
   }
   .advantage-icon-block {
     padding-left: 15px;
@@ -1709,7 +1711,7 @@ details[open] .question-details {
     justify-content: center;
   }
   .feedback-wrapper {
-    height: 770vh;
+    height: 740vh;
   }
   /* section send2 */
   .send2-wrapper {
@@ -1748,20 +1750,18 @@ details[open] .question-details {
   }
   /* section ccallback */
   .callback-wrapper {
-    height: 220px;
+    padding: 75px 30px 45px 30px;
   }
   .callback-wrapper-text,
   .callback-text {
-    width: 755px;
+    max-width: 755px;
   }
   .callback-header {
     font-size: 38px;
   }
   .callback-text {
     font-size: 20px;
-  }
-  .callback-wrapper-form {
-    transform: translateX(-150px);
+    line-height: 24px;
   }
   .callback-field,
   .callback-btn {
@@ -1798,7 +1798,7 @@ details[open] .question-details {
   }
   /* section advantage */
   .advantage-wrapper {
-    padding: 70px 30px 100px 30px;
+    padding: 100px 30px;
   }
   .icon-advantage {
     padding: 0px;
@@ -1979,9 +1979,6 @@ details[open] .question-details {
   .callback-text {
     font-size: 24px;
     line-height: 23px;
-  }
-  .callback-wrapper-form {
-    transform: translateX(0px);
   }
   .reviews-box,
   .reviews-box1 {
