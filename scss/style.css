@@ -774,7 +774,7 @@ input[type=checkbox] {
 
 .reviews-box-guarantee {
   min-width: 230px;
-  height: 235px;
+  height: 100%;
 }
 
 .guarantee-reviews-text {
@@ -1442,7 +1442,7 @@ details[open] .question-details {
     line-height: 43px;
   }
   .advantage-header {
-    padding: 0px 30px 55px 0px;
+    padding: 30px;
     margin: 0;
   }
   .advantage-icon-block {
@@ -1459,8 +1459,8 @@ details[open] .question-details {
   .guarantee-reviews-text {
     display: block;
   }
-  .about-guarantee {
-    justify-content: left;
+  .box-after1 {
+    opacity: 0;
   }
   .pagination-guarantee {
     translate: 0px -15px;
@@ -1489,9 +1489,10 @@ details[open] .question-details {
     height: 51px;
   }
   .guarantee-reviews-box {
-    margin-left: 25px;
+    margin: 25px 0px 0px 25px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
   .guarantee-header {
     width: 220px;
@@ -1500,27 +1501,17 @@ details[open] .question-details {
   }
   .guarantee-text {
     padding-left: 0px;
-    width: 220px;
-    height: 75px;
   }
   .guarantee-callback {
     margin: 20px 20px 40px 0px;
-  }
-  .box-after {
-    display: block;
-  }
-  .box-after1 {
-    display: none;
   }
   .advantage-wrapper {
     padding: 0px;
     height: 314px;
   }
   .reviews-box-guarantee {
-    height: 290px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
   .question-details {
     height: 50px;
@@ -1672,17 +1663,20 @@ details[open] .question-details {
     width: 47px;
     height: 36px;
   }
-  .box-after1 {
-    display: block;
-  }
   .guarantee-wrapper {
     padding: 0px;
   }
   .reviews-box-guarantee {
     margin: 0px;
   }
+  .box-after1 {
+    opacity: 1;
+  }
   .guarantee-reviews-box {
     min-width: 200px;
+  }
+  .about-guarantee {
+    display: block;
   }
 }
 @media (min-width: 770px) {
@@ -1866,10 +1860,6 @@ details[open] .question-details {
   .guarantee-wrapper {
     padding: 50px 30px 65px 30px;
   }
-  .guarantee-reviews-box {
-    width: 370px;
-    height: 365px;
-  }
   .guarantee-icon {
     width: 130px;
     height: 130px;
@@ -1887,8 +1877,6 @@ details[open] .question-details {
     font-size: 25px;
   }
   .guarantee-text {
-    margin: 0px 0px 50px 0px;
-    width: 310px;
     font-size: 16px;
     line-height: 19px;
   }
@@ -2006,9 +1994,6 @@ details[open] .question-details {
   .advantage-wrapper {
     height: 435px;
   }
-  .guarantee-wrapper {
-    height: 610px;
-  }
   .advantage-icon {
     width: 160px;
     height: 160px;
@@ -2046,9 +2031,6 @@ details[open] .question-details {
   }
   .guarantee-header {
     font-size: 30px;
-  }
-  .guarantee-text {
-    width: 360px;
   }
   .img-guarantee2 {
     margin-top: 37px;
