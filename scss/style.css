@@ -1328,6 +1328,9 @@ details[open] .question-details {
   .callback-btn {
     width: 280px;
   }
+  .footer-callback-btn {
+    width: 220px;
+  }
   .main-nav:hover .header-menu {
     transform: scale(0);
   }
