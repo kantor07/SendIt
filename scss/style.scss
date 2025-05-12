@@ -46,6 +46,24 @@
 }
 
 /* mixin */
+@mixin font-basic($font-size: 14px, $line-height: 17px) {
+  font-family: "MyriadProRegular", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin font-header($font-size, $line-height) {
+  font-family: "MyriadProBlack", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin font-bread-crumbs($font-size, $line-height) {
+  font-family: "MyriadProLight", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
 @mixin burger($width: 40px, $heigt: 3px, $color: #000000) {
   display: block;
   width: $width;
@@ -62,12 +80,6 @@
 
   border-top: $border solid $color;
   border-right: $border solid $color;
-}
-
-@mixin about-header-text {
-  font-family: "MyriadProBlack", sans-serif;
-  font-size: 28px;
-  color: #000000;
 }
 
 @mixin hover-menu {
@@ -152,14 +164,12 @@ body {
 }
 
 .nav-menu-link {
-  font-family: "MyriadProRegular", sans-serif;
-  font-size: 14px;
-  line-height: 17px;
+  @include font-basic();
   color: #ffffff;
   text-decoration: none;
 
   &:hover {
-    font-family: "MyriadProBlack", sans-serif;
+    @include font-basic(18px, 22px);
   }
 }
 
@@ -287,10 +297,8 @@ body {
 }
 
 .header-callback-field::-webkit-input-placeholder {
-  font-family: "MyriadProRegular", sans-serif;
+  @include font-basic();
 
-  font-size: 14px;
-  line-height: 17px;
   color: #363636;
 }
 
@@ -303,11 +311,9 @@ body {
 }
 
 .header-callback-btn-span {
-  font-size: 16px;
-  line-height: 19px;
-  color: #ffffff;
+  @include font-header(16px, 19px);
 
-  font-family: "MyriadProBlack", sans-serif;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
@@ -399,9 +405,8 @@ button {
 /*section send*/
 
 .send-header {
-  font-family: "MyriadProBlack", sans-serif;
-  font-size: 32px;
-  line-height: 38px;
+  @include font-header(32px, 38px);
+
   display: flex;
   align-items: center;
 
@@ -411,9 +416,8 @@ button {
 }
 
 .send-text {
-  font-family: "MyriadProBlack", sans-serif;
-  font-size: 24px;
-  line-height: 29px;
+  @include font-header(24px, 29px);
+
   color: #000000;
 }
 
@@ -462,9 +466,8 @@ button {
 .send-btn-span {
   padding-right: 25px;
 
-  font-family: "MyriadProBlack", sans-serif;
-  font-size: 16px;
-  line-height: 19px;
+  @include font-basic(16px, 19px);
+
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -491,9 +494,8 @@ button {
 }
 
 .send2-text {
-  font-family: "MyriadProRegular", sans-serif;
-  font-size: 11px;
-  line-height: 14px;
+  @include font-basic(11px, 14px);
+
   color: #000000;
 }
 
@@ -509,16 +511,14 @@ button {
 }
 
 .guide-step1-header {
-  font-family: "MyriadProRegular", sans-serif;
-  font-size: 26px;
-  line-height: 0px;
+  @include font-basic(26px, 0px);
+
   color: #000000;
 }
 
 .guide-step1-text {
-  font-family: "MyriadProRegular", sans-serif;
-  font-size: 13px;
-  line-height: 17px;
+  @include font-basic(13px, 17px);
+
   color: #000000;
 }
 
@@ -534,9 +534,8 @@ button {
 }
 
 .send3-header {
-  font-family: "MyriadProBlack", sans-serif;
-  font-size: 24px;
-  line-height: 29px;
+  @include font-header(24px, 29px);
+
   color: #000000;
 }
 
@@ -549,9 +548,8 @@ button {
 .callback-header {
   padding-top: 30px;
 
-  font-family: "MyriadProBlack", sans-serif;
-  font-size: 28px;
-  line-height: 34px;
+  @include font-header(28px, 34px);
+
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -564,9 +562,8 @@ button {
 }
 
 .callback-field::-webkit-input-placeholder {
-  font-family: "MyriadProRegular", sans-serif;
-  font-size: 16px;
-  line-height: 19px;
+  @include font-basic(16px, 19px);
+
   color: #ffffff;
 }
 
@@ -601,9 +598,8 @@ button {
 }
 
 .callback-btn-span {
-  font-family: "MyriadProBlack", sans-serif;
-  font-size: 16px;
-  line-height: 19px;
+  @include font-basic(16px, 19px);
+
   text-transform: uppercase;
   color: #363636;
 }
@@ -632,9 +628,8 @@ input[type="checkbox"] {
 .callback-input-span {
   margin-left: 5px;
 
-  font-family: "MyriadProLight", sans-serif;
-  font-size: 10px;
-  line-height: 0px;
+  @include font-bread-crumbs(10px, 0px);
+
   color: #ffffff;
 }
 
@@ -645,7 +640,8 @@ input[type="checkbox"] {
 /*section about*/
 
 .about-header {
-  @include about-header-text();
+  @include font-header(28px, 0px);
+  color: #000000;
 }
 
 /* section guarantee pagination */
@@ -718,23 +714,20 @@ input[type="checkbox"] {
 }
 
 .author-name {
-  font-family: "MyriadProRegular", sans-serif;
-  font-size: 26px;
-  line-height: 6px;
+  @include font-basic(26px, 6px);
+
   color: #000000;
 }
 
 .author-company {
-  font-family: "MyriadProRegular", sans-serif;
-  font-size: 18px;
-  line-height: 9px;
+  @include font-basic(18px, 9px);
+
   color: #000000;
 }
 
 .author-package {
-  font-family: "MyriadProRegular", sans-serif;
-  font-size: 10px;
-  line-height: 5px;
+  @include font-basic(10px, 5px);
+
   color: #000000;
 }
 
@@ -743,16 +736,14 @@ input[type="checkbox"] {
 }
 
 .about-package {
-  font-family: "MyriadProRegular", sans-serif;
-  font-size: 10px;
-  line-height: 4px;
+  @include font-basic(10px, 4px);
+
   color: #000000;
 }
 
 .author-comment {
-  font-family: "MyriadProRegular", sans-serif;
-  font-size: 12px;
-  line-height: 14px;
+  @include font-basic(12px, 14px);
+
   color: #000000;
 }
 
@@ -767,8 +758,8 @@ input[type="checkbox"] {
 }
 
 .advantage-header {
-  @include about-header-text();
-  line-height: 30px;
+  @include font-header(28px, 30px);
+  color: #000000;
 }
 
 .advantage-icon-block {
@@ -836,9 +827,8 @@ input[type="checkbox"] {
   width: 62px;
   height: 16px;
 
-  font-family: "MyriadProRegular", sans-serif;
-  font-size: 10px;
-  line-height: 12px;
+  @include font-basic(10px, 12px);
+
   color: #000000;
   text-align: center;
 }
@@ -851,9 +841,8 @@ input[type="checkbox"] {
   width: 160px;
   height: 39px;
 
-  font-family: "MyriadProRegular", sans-serif;
-  font-size: 16px;
-  line-height: 19px;
+  @include font-basic(16px, 19px);
+
   color: #000000;
 }
 
@@ -890,9 +879,8 @@ input[type="checkbox"] {
 
   width: 230px;
 
-  font-family: "MyriadProRegular", sans-serif;
-  font-size: 12px;
-  line-height: 14px;
+  @include font-basic(12px, 14px);
+
   color: #000000;
 }
 
@@ -921,10 +909,8 @@ input[type="checkbox"] {
 
 .guarantee-href {
   padding-right: 25px;
+  @include font-basic(16px, 19px);
 
-  font-family: "MyriadProBlack", sans-serif;
-  font-size: 16px;
-  line-height: 19px;
   color: #ffffff;
 
   text-transform: uppercase;
@@ -942,9 +928,8 @@ input[type="checkbox"] {
   margin: 0px;
   padding-top: 25px;
 
-  font-family: "MyriadProBlack", sans-serif;
-  font-size: 28px;
-  line-height: 34px;
+  @include font-header(28px, 34px);
+
   color: #000000;
 }
 
@@ -971,9 +956,8 @@ input[type="checkbox"] {
 .answer-text {
   padding: 10px 25px;
 
-  font-family: "MyriadProRegular", sans-serif;
-  font-size: 14px;
-  line-height: 17px;
+  @include font-basic(14px, 17px);
+
   color: #000000;
 }
 
@@ -1054,9 +1038,8 @@ details[open] .question-details {
 }
 
 .header-send4-text {
-  font-family: "MyriadProRegular", sans-serif;
-  font-size: 18px;
-  line-height: 22px;
+  @include font-basic(18px, 22px);
+
   color: #000000;
 }
 
@@ -1067,10 +1050,8 @@ details[open] .question-details {
 }
 
 .send4-callback-field::-webkit-input-placeholder {
-  font-family: "MyriadProRegular", sans-serif;
+  @include font-basic(14px, 17px);
 
-  font-size: 14px;
-  line-height: 17px;
   color: #363636;
 }
 
@@ -1136,9 +1117,8 @@ details[open] .question-details {
 .footer-text {
   margin-top: 17px;
 
-  font-family: "MyriadProRegular", sans-serif;
-  font-size: 9px;
-  line-height: 12px;
+  @include font-basic(9px, 12px);
+
   color: #000000;
 
   border-top: 1px solid#C4C4C4;
@@ -1319,10 +1299,7 @@ details[open] .question-details {
 .feedback-form::-webkit-input-placeholder,
 .name-field::placeholder,
 .tel-field::placeholder {
-  font-family: "MyriadProRegular", sans-serif;
-
-  font-size: 16px;
-  line-height: 19px;
+  @include font-basic(16px, 19px);
 
   color: #008dcd;
 }
@@ -1336,13 +1313,10 @@ details[open] .question-details {
   width: 280px;
   height: 50px;
 
-  font-family: "MyriadProRegular", sans-serif;
+  @include font-basic(16px, 19px);
 
   outline: 1px solid #008dcd;
   border-radius: 32px;
-
-  font-size: 16px;
-  line-height: 19px;
 
   color: #008dcd;
 }
@@ -1352,11 +1326,10 @@ details[open] .question-details {
 }
 
 .feedback-btn-span {
-  font-size: 16px;
-  line-height: 19px;
+  @include font-basic(16px, 19px);
+
   color: #ffffff;
 
-  font-family: "MyriadProBlack", sans-serif;
   text-transform: uppercase;
 }
 
@@ -1406,6 +1379,7 @@ details[open] .question-details {
 
     translate: none;
     padding: 0px;
+    margin: 0px;
   }
 
   .feedback-wrapper {
