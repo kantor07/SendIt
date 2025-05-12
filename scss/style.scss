@@ -450,8 +450,12 @@ button {
     transform: scale(1, 1);
   }
 
-  &:hover .main {
-    transform: none;
+  &:active .feedback-wrapper {
+    transform: scale(1, 1);
+  }
+
+  &:focus .feedback-wrapper {
+    transform: scale(1, 1);
   }
 }
 
@@ -1254,7 +1258,7 @@ details[open] .question-details {
   right: 0px;
 
   width: 100%;
-  height: 800vh;
+  height: 5535px;
 
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(7.5px);
@@ -1368,7 +1372,7 @@ details[open] .question-details {
 
   .feedback-wrapper {
     max-width: 100%;
-    height: 780vh;
+    height: 5390px;
   }
 
   .callback-field,
@@ -1405,7 +1409,7 @@ details[open] .question-details {
   }
 
   .feedback-wrapper {
-    height: 680vh;
+    height: 4700px;
   }
 
   .feedback {
@@ -1891,7 +1895,7 @@ details[open] .question-details {
   }
 
   .feedback-wrapper {
-    height: 700vh;
+    height: 4835px;
   }
 }
 
@@ -1936,7 +1940,7 @@ details[open] .question-details {
   }
 
   .feedback-wrapper {
-    height: 740vh;
+    height: 5460px;
   }
 
   /* section send2 */
@@ -2005,7 +2009,6 @@ details[open] .question-details {
   .callback-text {
     font-size: 20px;
     line-height: 24px;
-    width: 755px;
   }
 
   .callback-field,
@@ -2247,7 +2250,7 @@ details[open] .question-details {
 
 @media (min-width: 1160px) {
   .feedback-wrapper {
-    height: 850vh;
+    height: 5875px;
   }
 
   .guide-wrapper {
@@ -2273,6 +2276,7 @@ details[open] .question-details {
   }
 
   .callback-text {
+    width: 755px;
     font-size: 24px;
     line-height: 23px;
   }

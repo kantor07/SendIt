@@ -387,8 +387,11 @@ button {
 .send-btn:hover .feedback-wrapper {
   transform: scale(1, 1);
 }
-.send-btn:hover .main {
-  transform: none;
+.send-btn:active .feedback-wrapper {
+  transform: scale(1, 1);
+}
+.send-btn:focus .feedback-wrapper {
+  transform: scale(1, 1);
 }
 
 .send-btn-span {
@@ -1164,7 +1167,7 @@ details[open] .question-details {
   top: 0px;
   right: 0px;
   width: 100%;
-  height: 800vh;
+  height: 5535px;
   background: rgba(0, 0, 0, 0.2);
   -webkit-backdrop-filter: blur(7.5px);
           backdrop-filter: blur(7.5px);
@@ -1266,7 +1269,7 @@ details[open] .question-details {
   }
   .feedback-wrapper {
     max-width: 100%;
-    height: 780vh;
+    height: 5390px;
   }
   .callback-field,
   .callback-btn,
@@ -1295,7 +1298,7 @@ details[open] .question-details {
     padding: 0px;
   }
   .feedback-wrapper {
-    height: 680vh;
+    height: 4700px;
   }
   .feedback {
     width: 440px;
@@ -1688,7 +1691,7 @@ details[open] .question-details {
     translate: 0px -30px;
   }
   .feedback-wrapper {
-    height: 700vh;
+    height: 4835px;
   }
 }
 @media (min-width: 1024px) {
@@ -1723,7 +1726,7 @@ details[open] .question-details {
     justify-content: center;
   }
   .feedback-wrapper {
-    height: 740vh;
+    height: 5460px;
   }
   /* section send2 */
   .send2-wrapper {
@@ -1774,7 +1777,6 @@ details[open] .question-details {
   .callback-text {
     font-size: 20px;
     line-height: 24px;
-    width: 755px;
   }
   .callback-field,
   .callback-btn {
@@ -1964,7 +1966,7 @@ details[open] .question-details {
 }
 @media (min-width: 1160px) {
   .feedback-wrapper {
-    height: 850vh;
+    height: 5875px;
   }
   .guide-wrapper {
     padding-top: 40px;
@@ -1984,6 +1986,7 @@ details[open] .question-details {
     line-height: 58px;
   }
   .callback-text {
+    width: 755px;
     font-size: 24px;
     line-height: 23px;
   }
