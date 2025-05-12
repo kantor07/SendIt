@@ -88,10 +88,10 @@
   background: transparent;
 }
 
-@mixin btn($width: 280px, $height: 40px) {
+@mixin btn-callback($width: 280px, $height: 40px) {
   height: $height;
   min-width: $width;
-  outline: 1px solid #363636;
+  outline: 1px solid #b3b3b3;
   box-sizing: border-box;
   border-radius: 30px;
 }
@@ -325,8 +325,8 @@ body {
   padding-left: 25px;
   margin-bottom: 10px;
 
-  font-family: "MyriadProRegular", sans-serif;
-  @include btn();
+  @include font-basic();
+  @include btn-callback();
 }
 
 .header-callback-btn-span {
@@ -1039,9 +1039,8 @@ details[open] .question-details {
   padding-left: 25px;
   margin-bottom: 10px;
 
-  @include btn();
-  font-family: "MyriadProRegular", sans-serif;
-  background: #e9e9e9;
+  @include btn-callback();
+  @include font-basic(14px, 17px);
 }
 
 .footer-callback-btn {
@@ -1278,13 +1277,11 @@ details[open] .question-details {
   padding-left: 25px;
   margin-bottom: 10px;
 
-  width: 280px;
-  height: 50px;
+  @include btn-callback(280px, 50px);
 
   @include font-basic(16px, 19px);
 
   outline: 1px solid #008dcd;
-  border-radius: 32px;
 
   color: #008dcd;
 }
@@ -1364,12 +1361,9 @@ details[open] .question-details {
   }
 
   .name-field,
-  .tel-field {
-    width: 330px;
-  }
-
+  .tel-field,
   .feedback-btn {
-    width: 360px;
+    width: 330px;
   }
 
   .callback-field,
@@ -1673,7 +1667,7 @@ details[open] .question-details {
   .send4-callback-field {
     margin-bottom: 8px;
 
-    @include btn(220px, 50px);
+    @include btn-callback(220px, 50px);
   }
 
   .footer-callback-btn {
