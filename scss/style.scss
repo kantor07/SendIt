@@ -96,6 +96,25 @@
   border-radius: 30px;
 }
 
+@mixin btn-blue($width: 280px, $height: 40px) {
+  height: $height;
+  min-width: $width;
+
+  background: #008dcd;
+  box-sizing: border-box;
+  border-radius: 30px;
+
+  transition: 0.5s;
+
+  &:hover {
+    box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
+  }
+
+  &:active {
+    background: #94d1ec;
+  }
+}
+
 /* основные */
 
 body {
@@ -311,7 +330,7 @@ body {
 }
 
 .header-callback-btn-span {
-  @include font-header(16px, 19px);
+  @include font-basic(16px, 19px);
 
   color: #ffffff;
   text-transform: uppercase;
@@ -325,19 +344,7 @@ body {
 }
 
 .header-callback-btn {
-  height: 40px;
-  border-radius: 30px;
-  background-color: #008dcd;
-
-  transition: 0.5s;
-
-  &:hover {
-    box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
-  }
-
-  &:active {
-    background-color: #94d1ec;
-  }
+  @include btn-blue();
 }
 
 .header-callback-input-span {
@@ -426,25 +433,11 @@ button {
 }
 
 .btn-send {
-  height: 50px;
-  width: 280px;
+  @include btn-blue(280px, 50px);
 
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
-  background: #008dcd;
-
-  border-radius: 30px;
-  transition: 0.5s;
-
-  &:hover {
-    box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
-  }
-
-  &:active {
-    background: #94d1ec;
-  }
 }
 
 .send-btn {
@@ -887,24 +880,13 @@ input[type="checkbox"] {
 .guarantee-callback {
   margin-left: 30px;
 
-  @include btn(200px, 40px);
-  border: none;
+  @include btn-blue(230px, 40px);
 
-  background: #008dcd;
+  border: none;
 
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
-  transition: 0.5s;
-
-  &:hover {
-    box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
-  }
-
-  &:active {
-    background-color: #94d1ec;
-  }
 }
 
 .guarantee-href {
@@ -1063,19 +1045,7 @@ details[open] .question-details {
 }
 
 .footer-callback-btn {
-  height: 40px;
-  border-radius: 30px;
-  background-color: #008dcd;
-
-  transition: 0.5s;
-
-  &:hover {
-    box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
-  }
-
-  &:active {
-    background-color: #94d1ec;
-  }
+  @include btn-blue();
 }
 
 .send4-footer {
@@ -1707,8 +1677,7 @@ details[open] .question-details {
   }
 
   .footer-callback-btn {
-    width: 220px;
-    height: 50px;
+    @include btn-blue(220px, 50px);
   }
 
   .footer-send4-callback {

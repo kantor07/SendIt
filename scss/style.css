@@ -261,7 +261,7 @@ body {
 }
 
 .header-callback-btn-span {
-  font-family: "MyriadProBlack", sans-serif;
+  font-family: "MyriadProRegular", sans-serif;
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
@@ -277,15 +277,17 @@ body {
 
 .header-callback-btn {
   height: 40px;
+  min-width: 280px;
+  background: #008dcd;
+  box-sizing: border-box;
   border-radius: 30px;
-  background-color: #008dcd;
   transition: 0.5s;
 }
 .header-callback-btn:hover {
   box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
 }
 .header-callback-btn:active {
-  background-color: #94d1ec;
+  background: #94d1ec;
 }
 
 .header-callback-input-span {
@@ -368,13 +370,14 @@ button {
 
 .btn-send {
   height: 50px;
-  width: 280px;
+  min-width: 280px;
+  background: #008dcd;
+  box-sizing: border-box;
+  border-radius: 30px;
+  transition: 0.5s;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background: #008dcd;
-  border-radius: 30px;
-  transition: 0.5s;
 }
 .btn-send:hover {
   box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
@@ -815,22 +818,21 @@ input[type=checkbox] {
 .guarantee-callback {
   margin-left: 30px;
   height: 40px;
-  min-width: 200px;
-  outline: 1px solid #363636;
+  min-width: 230px;
+  background: #008dcd;
   box-sizing: border-box;
   border-radius: 30px;
+  transition: 0.5s;
   border: none;
-  background: #008dcd;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  transition: 0.5s;
 }
 .guarantee-callback:hover {
   box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
 }
 .guarantee-callback:active {
-  background-color: #94d1ec;
+  background: #94d1ec;
 }
 
 .guarantee-href {
@@ -993,15 +995,17 @@ details[open] .question-details {
 
 .footer-callback-btn {
   height: 40px;
+  min-width: 280px;
+  background: #008dcd;
+  box-sizing: border-box;
   border-radius: 30px;
-  background-color: #008dcd;
   transition: 0.5s;
 }
 .footer-callback-btn:hover {
   box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
 }
 .footer-callback-btn:active {
-  background-color: #94d1ec;
+  background: #94d1ec;
 }
 
 .send4-footer {
@@ -1562,8 +1566,18 @@ details[open] .question-details {
     border-radius: 30px;
   }
   .footer-callback-btn {
-    width: 220px;
     height: 50px;
+    min-width: 220px;
+    background: #008dcd;
+    box-sizing: border-box;
+    border-radius: 30px;
+    transition: 0.5s;
+  }
+  .footer-callback-btn:hover {
+    box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
+  }
+  .footer-callback-btn:active {
+    background: #94d1ec;
   }
   .footer-send4-callback {
     padding: 35px 0px 10px 0px;
