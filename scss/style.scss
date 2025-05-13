@@ -88,17 +88,18 @@
   background: transparent;
 }
 
-@mixin btn-callback($width: 280px, $height: 40px) {
+@mixin btn-grey($width: 280px, $height: 40px) {
   height: $height;
-  min-width: $width;
+  width: $width;
   outline: 1px solid #b3b3b3;
   box-sizing: border-box;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 @mixin btn-blue($width: 280px, $height: 40px) {
   height: $height;
-  min-width: $width;
+  width: $width;
 
   background: #008dcd;
   box-sizing: border-box;
@@ -326,7 +327,7 @@ body {
   margin-bottom: 10px;
 
   @include font-basic();
-  @include btn-callback();
+  @include btn-grey();
 }
 
 .header-callback-btn-span {
@@ -878,22 +879,22 @@ input[type="checkbox"] {
 }
 
 .guarantee-callback {
-  margin-left: 30px;
-
-  @include btn-blue(230px, 40px);
-
+  @include font-basic(16px, 19px);
   border: none;
-
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
 
 .guarantee-href {
   padding-right: 25px;
+  margin-left: 30px;
+
+  @include btn-blue(230px, 40px);
   @include font-basic(16px, 19px);
 
   color: #ffffff;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 
   text-transform: uppercase;
   text-decoration: none;
@@ -1039,7 +1040,7 @@ details[open] .question-details {
   padding-left: 25px;
   margin-bottom: 10px;
 
-  @include btn-callback();
+  @include btn-grey();
   @include font-basic(14px, 17px);
 }
 
@@ -1277,7 +1278,7 @@ details[open] .question-details {
   padding-left: 25px;
   margin-bottom: 10px;
 
-  @include btn-callback(280px, 50px);
+  @include btn-grey(280px, 50px);
 
   @include font-basic(16px, 19px);
 
@@ -1606,8 +1607,9 @@ details[open] .question-details {
     padding-left: 0px;
   }
 
-  .guarantee-callback {
-    margin: 20px 20px 40px 0px;
+  .guarantee-href {
+    margin: 0px 50px 0px 0px;
+    @include btn-blue(220px, 50px);
   }
 
   .advantage-wrapper {
@@ -1667,7 +1669,7 @@ details[open] .question-details {
   .send4-callback-field {
     margin-bottom: 8px;
 
-    @include btn-callback(220px, 50px);
+    @include btn-grey(220px, 50px);
   }
 
   .footer-callback-btn {
@@ -2078,14 +2080,6 @@ details[open] .question-details {
     line-height: 19px;
   }
 
-  .guarantee-href {
-    padding: 30px;
-  }
-
-  .guarantee-callback {
-    justify-content: center;
-  }
-
   .img-guarantee2 {
     margin-top: 20px;
     margin-left: 27px;
@@ -2098,6 +2092,12 @@ details[open] .question-details {
     margin-left: 30px;
     width: 67px;
     height: 69px;
+  }
+
+  .guarantee-href {
+    padding-left: 50px;
+    justify-content: center;
+    @include btn-blue(280px, 50px);
   }
 
   /* section guestions */
@@ -2281,6 +2281,10 @@ details[open] .question-details {
   .img-guarantee3 {
     margin-top: 45px;
     margin-left: 45px;
+  }
+
+  .guarantee-href {
+    @include btn-blue(360px, 50px);
   }
 
   .header-send4-text {
