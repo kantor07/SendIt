@@ -116,6 +116,25 @@
   }
 }
 
+@mixin btn-orange($width: 280px, $height: 50px) {
+  height: $height;
+  width: $width;
+
+  background: #ffcc00;
+  box-sizing: border-box;
+  border-radius: 30px;
+
+  transition: 0.5s;
+
+  &:hover {
+    box-shadow: 0px 4px 20px rgba(255, 204, 0, 0.55);
+  }
+
+  &:active {
+    background: #fce39c;
+  }
+}
+
 /* основные */
 
 body {
@@ -573,22 +592,13 @@ button {
   box-sizing: border-box;
   border-radius: 30px;
   background: #008dcd;
+
+  font-size: 16px;
+  color: #ffffff;
 }
 
 .callback-btn {
-  width: 280px;
-  height: 50px;
-
-  background: #ffcc00;
-  border-radius: 30px;
-
-  &:hover {
-    box-shadow: 0px 4px 20px rgba(255, 204, 0, 0.55);
-  }
-
-  &:active {
-    background: #fce39c;
-  }
+  @include btn-orange();
 }
 
 .callback-btn-span {
@@ -878,16 +888,8 @@ input[type="checkbox"] {
   color: #000000;
 }
 
-.guarantee-callback {
-  @include font-basic(16px, 19px);
-  border: none;
-}
-
 .guarantee-href {
-  padding-right: 25px;
-  margin-left: 30px;
-
-  @include btn-blue(230px, 40px);
+  cursor: none;
   @include font-basic(16px, 19px);
 
   color: #ffffff;
@@ -2284,6 +2286,7 @@ details[open] .question-details {
   }
 
   .guarantee-href {
+    padding-left: 0px;
     @include btn-blue(360px, 50px);
   }
 
