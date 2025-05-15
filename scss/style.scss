@@ -148,7 +148,7 @@
 
 body {
   margin: 0;
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "MyriadProRegular", "Lato", Arial, sans-serif;
 }
 
 .hidden {
@@ -212,13 +212,17 @@ body {
 }
 
 .nav-menu-link {
-  @include font-basic();
+  @include font-basic(14px, 17px);
   color: #ffffff;
   text-decoration: none;
 
   &:hover {
     @include font-basic(18px, 22px);
   }
+}
+
+.footer-nav-menu {
+  color: #000000;
 }
 
 .nav-menu-header {
@@ -452,7 +456,7 @@ button {
 }
 
 .send-text {
-  @include font-header3(24px, 29px);
+  @include font-header(24px, 29px);
 
   color: #000000;
 }
@@ -509,7 +513,7 @@ button {
 }
 
 .send2-header {
-  @include font-header(17px, 22px;);
+  @include font-header(17px, 22px);
   color: #000000;
 }
 
@@ -575,9 +579,8 @@ button {
 }
 
 .callback-text {
-  font-family: "MyriadProSemibold", sans-serif;
-  font-size: 14px;
-  line-height: 13px;
+  @include font-header3(14px, 13px);
+
   color: #ffffff;
 }
 
@@ -1115,13 +1118,6 @@ details[open] .question-details {
   transform: scale(0);
 }
 
-.footer-nav-menu-link {
-  @include font-basic(14px, 17px);
-
-  color: #000000;
-  text-decoration: none;
-}
-
 .nav-menu-header {
   display: flex;
   flex-direction: row;
@@ -1256,9 +1252,7 @@ details[open] .question-details {
 .feedback-header {
   text-align: center;
 
-  font-family: "MyriadProSemibold", sans-serif;
-  font-size: 20px;
-  line-height: 24px;
+  @include font-header3(20px, 24px);
 
   color: #000000;
 }
@@ -1853,6 +1847,9 @@ details[open] .question-details {
   .nav-menu-link {
     font-size: 18px;
     line-height: 22px;
+    &:hover {
+      font-weight: 600;
+    }
   }
 
   /* section send */
@@ -1976,8 +1973,7 @@ details[open] .question-details {
   }
 
   .author-name {
-    font-family: "MyriadProLight", sans-serif;
-    font-size: 36px;
+    @include font-bread-crumbs(36px, 0px);
   }
 
   .author-company {
@@ -2161,11 +2157,6 @@ details[open] .question-details {
   .header-callback-btn-span {
     display: flex;
     justify-content: center;
-  }
-
-  .footer-nav-menu-link {
-    font-size: 18px;
-    line-height: 22px;
   }
 
   .footer-text {
