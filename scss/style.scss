@@ -58,6 +58,12 @@
   line-height: $line-height;
 }
 
+@mixin font-header3($font-size, $line-height) {
+  font-family: "MyriadProSemiBold", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
 @mixin font-bread-crumbs($font-size, $line-height) {
   font-family: "MyriadProLight", sans-serif;
   font-size: $font-size;
@@ -88,10 +94,11 @@
   background: transparent;
 }
 
-@mixin btn-grey($width: 280px, $height: 40px) {
+@mixin btn-outline($width: 280px, $height: 40px, $color) {
   height: $height;
   width: $width;
-  outline: 1px solid #b3b3b3;
+
+  outline: 1px solid $color;
   box-sizing: border-box;
   border-radius: 30px;
   cursor: pointer;
@@ -106,6 +113,7 @@
   border-radius: 30px;
 
   transition: 0.5s;
+  cursor: pointer;
 
   &:hover {
     box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
@@ -125,6 +133,7 @@
   border-radius: 30px;
 
   transition: 0.5s;
+  cursor: pointer;
 
   &:hover {
     box-shadow: 0px 4px 20px rgba(255, 204, 0, 0.55);
@@ -346,7 +355,7 @@ body {
   margin-bottom: 10px;
 
   @include font-basic();
-  @include btn-grey();
+  @include btn-outline(280px, 40px, #363636);
 }
 
 .header-callback-btn-span {
@@ -412,7 +421,7 @@ button {
 .fab {
   padding-right: 5px;
 
-  font-family: FontAwesome;
+  font-family: "FontAwesome";
   font-size: 22px;
   line-height: 42px;
   font-weight: 400;
@@ -443,7 +452,7 @@ button {
 }
 
 .send-text {
-  @include font-header(24px, 29px);
+  @include font-header3(24px, 29px);
 
   color: #000000;
 }
@@ -500,9 +509,7 @@ button {
 }
 
 .send2-header {
-  font-family: "MyriadProSemibold", sans-serif;
-  font-size: 17px;
-  line-height: 22px;
+  @include font-header(17px, 22px;);
   color: #000000;
 }
 
@@ -584,16 +591,11 @@ button {
   padding-left: 25px;
   margin-bottom: 9px;
 
-  width: 280px;
-  height: 50px;
+  @include btn-outline(280px, 50px, #ffffff);
+  @include font-basic(16px, 0px);
 
-  font-family: "MyriadProRegular", sans-serif;
-  outline: 1px solid #ffffff;
-  box-sizing: border-box;
-  border-radius: 30px;
   background: #008dcd;
 
-  font-size: 16px;
   color: #ffffff;
 }
 
@@ -1042,7 +1044,7 @@ details[open] .question-details {
   padding-left: 25px;
   margin-bottom: 10px;
 
-  @include btn-grey();
+  @include btn-outline(280px, 40px, #363636);
   @include font-basic(14px, 17px);
 }
 
@@ -1114,9 +1116,8 @@ details[open] .question-details {
 }
 
 .footer-nav-menu-link {
-  font-family: "MyriadProRegular";
-  font-size: 14px;
-  line-height: 17px;
+  @include font-basic(14px, 17px);
+
   color: #000000;
   text-decoration: none;
 }
@@ -1280,11 +1281,9 @@ details[open] .question-details {
   padding-left: 25px;
   margin-bottom: 10px;
 
-  @include btn-grey(280px, 50px);
+  @include btn-outline(280px, 50px, #008dcd);
 
   @include font-basic(16px, 19px);
-
-  outline: 1px solid #008dcd;
 
   color: #008dcd;
 }
@@ -1671,7 +1670,7 @@ details[open] .question-details {
   .send4-callback-field {
     margin-bottom: 8px;
 
-    @include btn-grey(220px, 50px);
+    @include btn-outline(220px, 50px, #363636);
   }
 
   .footer-callback-btn {

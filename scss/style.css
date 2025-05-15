@@ -257,7 +257,7 @@ body {
   line-height: 17px;
   height: 40px;
   width: 280px;
-  outline: 1px solid #b3b3b3;
+  outline: 1px solid #363636;
   box-sizing: border-box;
   border-radius: 30px;
   cursor: pointer;
@@ -285,6 +285,7 @@ body {
   box-sizing: border-box;
   border-radius: 30px;
   transition: 0.5s;
+  cursor: pointer;
 }
 .header-callback-btn:hover {
   box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
@@ -332,7 +333,7 @@ button {
 
 .fab {
   padding-right: 5px;
-  font-family: FontAwesome;
+  font-family: "FontAwesome";
   font-size: 22px;
   line-height: 42px;
   font-weight: 400;
@@ -378,6 +379,7 @@ button {
   box-sizing: border-box;
   border-radius: 30px;
   transition: 0.5s;
+  cursor: pointer;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -510,14 +512,16 @@ button {
 .callback-field {
   padding-left: 25px;
   margin-bottom: 9px;
-  width: 280px;
   height: 50px;
-  font-family: "MyriadProRegular", sans-serif;
+  width: 280px;
   outline: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 30px;
-  background: #008dcd;
+  cursor: pointer;
+  font-family: "MyriadProRegular", sans-serif;
   font-size: 16px;
+  line-height: 0px;
+  background: #008dcd;
   color: #ffffff;
 }
 
@@ -528,6 +532,7 @@ button {
   box-sizing: border-box;
   border-radius: 30px;
   transition: 0.5s;
+  cursor: pointer;
 }
 .callback-btn:hover {
   box-shadow: 0px 4px 20px rgba(255, 204, 0, 0.55);
@@ -976,7 +981,7 @@ details[open] .question-details {
   margin-bottom: 10px;
   height: 40px;
   width: 280px;
-  outline: 1px solid #b3b3b3;
+  outline: 1px solid #363636;
   box-sizing: border-box;
   border-radius: 30px;
   cursor: pointer;
@@ -992,6 +997,7 @@ details[open] .question-details {
   box-sizing: border-box;
   border-radius: 30px;
   transition: 0.5s;
+  cursor: pointer;
 }
 .footer-callback-btn:hover {
   box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
@@ -1072,7 +1078,7 @@ details[open] .question-details {
 }
 
 .footer-nav-menu-link {
-  font-family: "MyriadProRegular";
+  font-family: "MyriadProRegular", sans-serif;
   font-size: 14px;
   line-height: 17px;
   color: #000000;
@@ -1237,14 +1243,13 @@ details[open] .question-details {
   margin-bottom: 10px;
   height: 50px;
   width: 280px;
-  outline: 1px solid #b3b3b3;
+  outline: 1px solid #008dcd;
   box-sizing: border-box;
   border-radius: 30px;
   cursor: pointer;
   font-family: "MyriadProRegular", sans-serif;
   font-size: 16px;
   line-height: 19px;
-  outline: 1px solid #008dcd;
   color: #008dcd;
 }
 
@@ -1513,6 +1518,7 @@ details[open] .question-details {
     box-sizing: border-box;
     border-radius: 30px;
     transition: 0.5s;
+    cursor: pointer;
   }
   .guarantee-href:hover {
     box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
@@ -1566,7 +1572,7 @@ details[open] .question-details {
     margin-bottom: 8px;
     height: 50px;
     width: 220px;
-    outline: 1px solid #b3b3b3;
+    outline: 1px solid #363636;
     box-sizing: border-box;
     border-radius: 30px;
     cursor: pointer;
@@ -1578,6 +1584,7 @@ details[open] .question-details {
     box-sizing: border-box;
     border-radius: 30px;
     transition: 0.5s;
+    cursor: pointer;
   }
   .footer-callback-btn:hover {
     box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
@@ -1926,6 +1933,7 @@ details[open] .question-details {
     box-sizing: border-box;
     border-radius: 30px;
     transition: 0.5s;
+    cursor: pointer;
   }
   .guarantee-href:hover {
     box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
@@ -2084,6 +2092,7 @@ details[open] .question-details {
     box-sizing: border-box;
     border-radius: 30px;
     transition: 0.5s;
+    cursor: pointer;
   }
   .guarantee-href:hover {
     box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
